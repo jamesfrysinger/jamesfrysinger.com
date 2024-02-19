@@ -1,0 +1,13 @@
+import { FC } from "react";
+interface IBrandLogo {
+  logo: string;
+}
+const BrandLogo: FC<IBrandLogo> = ({ logo }) => {
+  return (
+    <div className="w-1/2 sm:w-1/4 p-2 py-4">
+      <img src={logo} alt="" className="mx-auto" />
+    </div>
+  );
+};
+
+export default BrandLogo;
