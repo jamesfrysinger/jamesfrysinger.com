@@ -4,7 +4,7 @@ interface IParagraph {
   children: ReactNode;
 }
 const Paragraph: FC<IParagraph> = ({ children }) => {
-  return <p className="leading-9 text-lg">{children}</p>;
+  return <p className="leading-8 sm:leading-9 sm:text-lg">{children}</p>;
 };
 
 export default Paragraph;

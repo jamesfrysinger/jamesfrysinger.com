@@ -5,8 +5,10 @@ interface IListStyle {
 }
 const ListStyle: FC<IListStyle> = ({ children }) => {
   return (
-    <li className="text-lg leading-9 flex">
-      <span className="block pr-3">+</span>
+    <li className="leading-6 sm:leading-9 sm:text-lg py-1 sm:py-0 flex">
+      <span className="block pr-2 text-neutral-400 dark:text-neutral-500">
+        +
+      </span>
       <p className="block">{children}</p>
     </li>
   );

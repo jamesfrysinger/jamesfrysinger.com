@@ -3,7 +3,7 @@ import logo from "../assets/images/jamesfrysinger-logo.svg";
 
 const Header: FC = () => {
   return (
-    <header className="App-header pb-10">
+    <header className="App-header pb-8">
       <img src={logo} alt="" className="w-100 dark:filter dark:invert" />
     </header>
   );
