@@ -1,49 +1,39 @@
-import {
-  Button,
-  FormControl,
-  Snackbar,
-  SnackbarOrigin,
-  TextField,
-} from "@mui/material";
+import { Button, FormControl, Snackbar, TextField } from "@mui/material";
 import Heading from "./common/Heading";
 import Section from "./common/Section";
-import { Send } from "@mui/icons-material";
 import emailjs from "emailjs-com";
 import { FormEvent, useRef, useState } from "react";
+import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../config/credentials";
 
 const ContactMe = () => {
-  const [state, setState] = useState({
-    open: false,
-    vertical: "top",
-    horizontal: "center",
-  });
-  const { vertical, horizontal, open } = state;
+  const [snack, setSnack] = useState<{
+    isOpen: boolean;
+    message: string;
+  } | null>(null);
 
-  const handleClick = (newState: SnackbarOrigin) => () => {
-    setState({ ...newState, open: true });
-  };
-
-  const handleClose = () => {
-    setState({ ...state, open: false });
-  };
-
-  const SERVICE_ID = "default_service";
-  const TEMPLATE_ID = "template_grxkgau";
-  const USER_ID = "Nam9JiPoWz8W18IeA";
-
+  const [disabled, setDisabled] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleOnSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setDisabled(true);
     if (formRef.current) {
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID).then(
         (result) => {
-          console.log(result.text);
-          // SNACK
+          console.warn(`Contact form submit: ${result.text}`);
+          setSnack({
+            isOpen: true,
+            message: "Your message was sent!",
+          });
+          setDisabled(false);
         },
         (error) => {
-          console.log(error.text);
-          // SNACK
+          console.warn(`Contact form submit: ${error.text}`);
+          setSnack({
+            isOpen: true,
+            message: "There was an error. Please try again.",
+          });
+          setDisabled(false);
         }
       );
       formRef.current.reset();
@@ -67,6 +57,7 @@ const ContactMe = () => {
             name="user_name"
             required
             className="w-full"
+            disabled={disabled}
           />
           <TextField
             variant="filled"
@@ -76,6 +67,7 @@ const ContactMe = () => {
             name="user_email"
             required
             className="w-full"
+            disabled={disabled}
           />
           <TextField
             variant="filled"
@@ -86,19 +78,27 @@ const ContactMe = () => {
             name="user_message"
             required
             className="w-full"
+            disabled={disabled}
           />
           <Button
             variant="contained"
             size="large"
             type="submit"
             className="w-full"
+            disabled={disabled}
           >
             Send
           </Button>
           <input type="hidden" value="James Frysinger" name="to_name" />
         </form>
       </FormControl>
-      <Snackbar open={false} onClose={handleClose} message="I love snacks" />
+      <Snackbar
+        open={snack?.isOpen ?? false}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        message={snack?.message ?? ""}
+        autoHideDuration={4000}
+        onClose={() => setSnack(null)}
+      />
     </Section>
   );
 };
