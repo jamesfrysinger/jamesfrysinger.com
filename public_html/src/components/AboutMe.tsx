@@ -1,17 +1,24 @@
-import photo from "../assets/images/jamesfrysinger-picture.jpg";
+import { FC } from "react";
+import photoDT from "../assets/images/jamesfrysinger-picture-dt.jpg";
+import photoMO from "../assets/images/jamesfrysinger-picture-mo.jpg";
 import Heading from "./common/Heading";
 import Paragraph from "./common/Paragraph";
 import Section from "./common/Section";
-const AboutMe = () => {
+
+const AboutMe: FC = () => {
   return (
     <Section>
       <Heading heading="About Me" />
       <Paragraph>
-        <img
-          src={photo}
-          alt=""
-          className="float-right w-1/2 min-w-[350px] pl-10 py-2"
-        />
+        <picture>
+          <source media="(max-width: 639px)" srcSet={photoMO} />
+          <source media="(min-width: 640px)" srcSet={photoDT} />
+          <img
+            src={photoDT}
+            alt=""
+            className="float-right w-full sm:w-1/2 min-w-[350px] sm:pl-10 py-2"
+          />
+        </picture>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
         fermentum lectus at fringilla. Sed ut blandit quam. Suspendisse lacinia
         sed lacus non tincidunt. Donec bibendum faucibus felis. Aenean lectus

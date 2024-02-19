@@ -10,7 +10,7 @@ const theme = createTheme({
       main: grey[600],
     },
     text: {
-      primary: grey[800],
+      primary: grey[600],
       secondary: grey[600],
     },
   },
@@ -22,12 +22,15 @@ const theme = createTheme({
       styleOverrides: {
         underline: {
           "&:before": {
-            borderBottom: "none",
+            borderBottomColor: "transparent",
+          },
+          "&:after": {
+            borderBottomColor: "transparent",
           },
         },
         root: {
+          backgroundColor: "rgba(136, 136, 136, 0.06)",
           height: "55px",
-          backgroundColor: "rgba(0, 0, 0, 0.03)",
           fontSize: "16px",
         },
       },
@@ -37,6 +40,9 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           boxShadow: "none",
+          "&:hover": {
+            boxShadow: "none",
+          },
           borderRadius: 0,
           height: "55px",
           textTransform: "initial",

@@ -1,19 +1,27 @@
-import { Button, FormControl, Snackbar, TextField } from "@mui/material";
+import {
+  Button,
+  FormControl,
+  IconButton,
+  Snackbar,
+  TextField,
+} from "@mui/material";
 import Heading from "./common/Heading";
 import Section from "./common/Section";
 import emailjs from "emailjs-com";
-import { FormEvent, useRef, useState } from "react";
+import { FC, FormEvent, useRef, useState } from "react";
 import {
   SERVICE_ID,
   TEMPLATE_ID,
   USER_ID,
 } from "../config/credentials/credentials";
+import { Close } from "@mui/icons-material";
 
-const ContactMe = () => {
+const ContactMe: FC = () => {
   const [snack, setSnack] = useState<{
     isOpen: boolean;
     message: string;
   } | null>(null);
+  const handleClose = () => setSnack(null);
 
   const [disabled, setDisabled] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
@@ -40,18 +48,19 @@ const ContactMe = () => {
           setDisabled(false);
         }
       );
+      formRef.current.value = "";
       formRef.current.reset();
     }
   };
 
   return (
     <Section>
-      <Heading heading="Contact Me" />
+      <Heading heading="Contact Me" position="text-center sm:text-left" />
       <FormControl className="w-full">
         <form
           ref={formRef}
           onSubmit={handleOnSubmit}
-          className="w-full space-y-4 pt-4"
+          className="w-full space-y-4 pt-2"
         >
           <TextField
             variant="filled"
@@ -98,10 +107,20 @@ const ContactMe = () => {
       </FormControl>
       <Snackbar
         open={snack?.isOpen ?? false}
-        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
         message={snack?.message ?? ""}
         autoHideDuration={4000}
-        onClose={() => setSnack(null)}
+        onClose={handleClose}
+        action={
+          <IconButton
+            size="small"
+            aria-label="close"
+            color="inherit"
+            onClick={handleClose}
+          >
+            <Close fontSize="small" />
+          </IconButton>
+        }
       />
     </Section>
   );

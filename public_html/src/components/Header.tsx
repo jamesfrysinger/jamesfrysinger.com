@@ -1,9 +1,10 @@
+import { FC } from "react";
 import logo from "../assets/images/jamesfrysinger-logo.svg";
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <header className="App-header pb-10">
-      <img src={logo} alt="" className="w-100" />
+      <img src={logo} alt="" className="w-100 dark:filter dark:invert" />
     </header>
   );
 };

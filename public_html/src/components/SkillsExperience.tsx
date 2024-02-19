@@ -1,9 +1,10 @@
+import { FC } from "react";
 import Heading from "./common/Heading";
 import ListStyle from "./common/ListStyle";
 import Paragraph from "./common/Paragraph";
 import Section from "./common/Section";
 
-const SkillsExperience = () => {
+const SkillsExperience: FC = () => {
   return (
     <Section>
       <Heading heading="Skills and Experience" type="h2" />
@@ -14,7 +15,7 @@ const SkillsExperience = () => {
         leo, facilisis a condimentum id, dapibus et condimentum id, dapibus et
         condimentum id, dapibus et nulla.
       </Paragraph>
-      <div className="flex py-4">
+      <div className="flex pt-4">
         <ul className="max-w-1/2 pr-6">
           <ListStyle>Strategy & Consulting</ListStyle>
           <ListStyle>E-commerce & Brand Websites</ListStyle>

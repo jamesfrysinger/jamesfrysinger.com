@@ -26,7 +26,7 @@ const Brands: FC = () => {
         type="h3"
         position="text-center sm:text-left"
       />
-      <div className="flex flex-wrap justify-start mt-4">
+      <div className="flex flex-wrap justify-start mt-2">
         <LogoGroup>
           <BrandLogo logo={nike} />
           <BrandLogo logo={calvinklein} />
@@ -40,8 +40,9 @@ const Brands: FC = () => {
           <BrandLogo logo={acha} />
         </LogoGroup>
         <LogoGroup>
-          <BrandLogo logo={fanuka} />
           <BrandLogo logo={grindstone} />
+          <BrandLogo logo={fanuka} />
+
           <BrandLogo logo={ucww} />
           <BrandLogo logo={cascade} />
         </LogoGroup>
