@@ -36,14 +36,10 @@ const Footer: FC = () => {
           />
           <SocialButtons
             icon={github}
-            href="https://github.com/jimmyfrysinger"
+            href="https://github.com/jamesfrysinger"
             alt="LinkedIn Alt Text"
           />
-          <SocialButtons
-            icon={cv}
-            href="http://googasdle.com"
-            alt="LinkedIn Alt Text"
-          />
+          <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" />
           <div className="text-xs text-neutral-500 border-l-[1px] border-neutral-200 dark:border-neutral-700 pl-3 leading-4">
             Find me on LinkedIn and GitHub or download my cv. <br />
             This website was designged and developed by James Frysinger using
