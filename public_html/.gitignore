@@ -6,7 +6,7 @@
 .pnp.js
 
 # Ignore credentials file
-src/config/credentials.ts
+src/config/credentials.tsx
 
 # testing
 /coverage
