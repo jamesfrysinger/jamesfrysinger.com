@@ -44,7 +44,7 @@ const Footer: FC = () => {
             href="http://googasdle.com"
             alt="LinkedIn Alt Text"
           />
-          <div className="text-xs text-gray-500 border-l-[1px] border-neutral-200 dark:border-neutral-700 pl-3">
+          <div className="text-xs text-stone-500 border-l-[1px] border-stone-200 dark:border-stone-700 pl-3">
             Find me on LinkedIn and GitHub or download my cv.
           </div>
         </div>

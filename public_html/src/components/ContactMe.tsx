@@ -48,7 +48,6 @@ const ContactMe: FC = () => {
           setDisabled(false);
         }
       );
-      formRef.current.value = "";
       formRef.current.reset();
     }
   };
@@ -56,7 +55,7 @@ const ContactMe: FC = () => {
   return (
     <Section>
       <Heading heading="Contact Me" position="text-center sm:text-left" />
-      <FormControl className="w-full">
+      <FormControl className="w-full ">
         <form
           ref={formRef}
           onSubmit={handleOnSubmit}
@@ -69,7 +68,7 @@ const ContactMe: FC = () => {
             id="form-input-control-email"
             name="user_name"
             required
-            className="w-full"
+            className="w-full dark:text-white"
             disabled={disabled}
           />
           <TextField
