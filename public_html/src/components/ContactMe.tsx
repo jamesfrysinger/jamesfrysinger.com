@@ -3,7 +3,11 @@ import Heading from "./common/Heading";
 import Section from "./common/Section";
 import emailjs from "emailjs-com";
 import { FormEvent, useRef, useState } from "react";
-import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../config/credentials";
+import {
+  SERVICE_ID,
+  TEMPLATE_ID,
+  USER_ID,
+} from "../config/credentials/credentials";
 
 const ContactMe = () => {
   const [snack, setSnack] = useState<{
