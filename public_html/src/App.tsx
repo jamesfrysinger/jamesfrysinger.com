@@ -11,7 +11,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="flex justify-center  min-h-screen">
-        <div className="w-full max-w-[768px] bg-white px-6 lg:px-0">
+        <div className="w-full max-w-[768px] bg-white px-6 lg:px-0 m">
           <Header />
           <AboutMe />
           <SkillsExperience />
