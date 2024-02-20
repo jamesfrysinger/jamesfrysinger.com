@@ -8,6 +8,7 @@
 # Ignore credentials file
 src/config/credentials/*
 
+# Ignore backup folder
 backup
 
 # testing
