@@ -1,52 +1,11 @@
-import linkedin from "../assets/images/social-icons/linkedin-icon.png";
-import github from "../assets/images/social-icons/github-icon.png";
-import cv from "../assets/images/social-icons/cv-icon.png";
 import { FC } from "react";
 import Section from "./common/Section";
 
 const Footer: FC = () => {
-  const SocialButtons: FC<{ icon: string; href: string; alt: string }> = ({
-    icon,
-    href,
-    alt,
-  }) => {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-        className="mr-4 opacity-30 hover:opacity-80 transition-opacity duration-300"
-      >
-        <img
-          src={icon}
-          alt={alt}
-          className="dark:filter dark:invert max-w-[30px] max-h-[30px] min-w-[30px] min-h-[30px]"
-        />
-      </a>
-    );
-  };
   return (
-    <div className="mb-10">
-      <Section>
-        <div className="flex items-center">
-          <SocialButtons
-            icon={linkedin}
-            href="https://www.linkedin.com/in/james-frysinger-7b56134b/"
-            alt="LinkedIn Alt Text"
-          />
-          <SocialButtons
-            icon={github}
-            href="https://github.com/jamesfrysinger"
-            alt="LinkedIn Alt Text"
-          />
-          <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" />
-          <div className="text-xs text-neutral-500 border-l-[1px] border-neutral-200 dark:border-neutral-700 pl-4 leading-4">
-            Find me on LinkedIn and GitHub or download my cv. Website designed
-            and developed by James Frysinger using ReactJs, TypeScript and
-            Tailwind.
-          </div>
-        </div>
-      </Section>
+    <div className="text-sm text-neutral-400 dark:text-neutral-700 leading-6 mb-10">
+      This website was designed and developed by James Frysinger using ReactJs,
+      TypeScript and TailwindCSS.
     </div>
   );
 };

@@ -48,6 +48,7 @@ const ContactMe: FC = () => {
           setDisabled(false);
         }
       );
+      formRef.current.value = " ";
       formRef.current.reset();
     }
   };
@@ -55,14 +56,14 @@ const ContactMe: FC = () => {
   return (
     <Section>
       <Heading heading="Connect With Me" />
-      <FormControl className="w-full ">
+      <FormControl className="w-full">
         <form
           ref={formRef}
           onSubmit={handleOnSubmit}
           className="w-full space-y-4 pt-2"
         >
           <TextField
-            variant="filled"
+            variant="standard"
             label="Your name"
             type="text"
             id="form-input-control-email"
@@ -72,7 +73,7 @@ const ContactMe: FC = () => {
             disabled={disabled}
           />
           <TextField
-            variant="filled"
+            variant="standard"
             label="Your email address"
             type="email"
             id="form-input-control-last-name"
@@ -82,7 +83,7 @@ const ContactMe: FC = () => {
             disabled={disabled}
           />
           <TextField
-            variant="filled"
+            variant="standard"
             label="Your message"
             multiline
             type="text"
@@ -96,7 +97,7 @@ const ContactMe: FC = () => {
             variant="contained"
             size="large"
             type="submit"
-            className="w-full"
+            className="w-full sm:w-1/2"
             disabled={disabled}
           >
             Send

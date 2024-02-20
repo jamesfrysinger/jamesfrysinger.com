@@ -18,18 +18,19 @@ const theme = createTheme({
     fontFamily: "Avenir",
   },
   components: {
-    MuiFilledInput: {
+    MuiInput: {
       styleOverrides: {
         underline: {
           "&:before": {
-            borderBottomColor: "transparent",
+            borderBottomColor: "rgb(229, 229, 229)",
           },
-          "&:after": {
-            borderBottomColor: "transparent",
+          "@media (prefers-color-scheme: dark)": {
+            "&:before": {
+              borderBottomColor: "rgb(64, 64, 64)", // Color for dark mode
+            },
           },
         },
         root: {
-          backgroundColor: "rgba(136, 136, 136, 0.06)",
           minHeight: "55px",
           fontSize: "16px",
         },
@@ -42,6 +43,12 @@ const theme = createTheme({
           boxShadow: "none",
           "&:hover": {
             boxShadow: "none",
+          },
+          "@media (prefers-color-scheme: dark)": {
+            "&:hover": {
+              backgroundColor: "rgba(255,255,255,0.7)",
+              color: "#000000",
+            },
           },
           borderRadius: 0,
           minHeight: "55px",

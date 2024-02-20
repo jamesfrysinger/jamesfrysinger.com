@@ -6,8 +6,9 @@ import Header from "./components/Header";
 import SkillsExperience from "./components/SkillsExperience";
 import "./styles/App.css";
 import theme from "./theme/muiTheme";
-import Footer from "./components/Footer";
+import Socials from "./components/Socials";
 import { FC } from "react";
+import Footer from "./components/Footer";
 
 const App: FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: FC = () => {
         <div className="w-full max-w-[768px] px-8 lg:px-0 m">
           <Header />
           <AboutMe />
+          <Socials />
           <SkillsExperience />
           <Brands />
           <ContactMe />
