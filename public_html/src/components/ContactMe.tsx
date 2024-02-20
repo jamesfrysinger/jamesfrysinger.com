@@ -54,7 +54,7 @@ const ContactMe: FC = () => {
 
   return (
     <Section>
-      <Heading heading="Connect With Me" position="text-center sm:text-left" />
+      <Heading heading="Connect With Me" />
       <FormControl className="w-full ">
         <form
           ref={formRef}

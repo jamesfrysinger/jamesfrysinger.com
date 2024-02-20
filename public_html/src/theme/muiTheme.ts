@@ -30,7 +30,7 @@ const theme = createTheme({
         },
         root: {
           backgroundColor: "rgba(136, 136, 136, 0.06)",
-          height: "55px",
+          minHeight: "55px",
           fontSize: "16px",
         },
       },
@@ -44,7 +44,7 @@ const theme = createTheme({
             boxShadow: "none",
           },
           borderRadius: 0,
-          height: "55px",
+          minHeight: "55px",
           textTransform: "initial",
           fontSize: "16px",
         },

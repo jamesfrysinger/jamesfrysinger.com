@@ -1,6 +1,6 @@
 import { FC } from "react";
-import photoDT from "../assets/images/jamesfrysinger-picture-dt.jpg";
-import photoMO from "../assets/images/jamesfrysinger-picture-mo.jpg";
+import photoDT from "../assets/images/jamesfrysinger-picture-dt-2.jpg";
+import photoMO from "../assets/images/jamesfrysinger-picture-mo-2.jpg";
 import Heading from "./common/Heading";
 import Paragraph from "./common/Paragraph";
 import Section from "./common/Section";

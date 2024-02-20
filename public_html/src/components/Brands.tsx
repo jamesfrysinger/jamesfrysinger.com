@@ -24,7 +24,7 @@ const Brands: FC = () => {
       <Heading
         heading="Brands I've Worked With"
         type="h3"
-        position="text-center sm:text-left"
+        // position="text-center sm:text-left"
       />
       <div className="flex flex-wrap justify-start mt-2">
         <LogoGroup>

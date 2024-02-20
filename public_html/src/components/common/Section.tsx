@@ -5,7 +5,9 @@ interface ISection {
 }
 const Section: FC<ISection> = ({ children }) => {
   return (
-    <section className="section inline-flex flex-wrap my-8">{children}</section>
+    <section className="section inline-flex flex-wrap my-10 sm:my-12">
+      {children}
+    </section>
   );
 };
 
