@@ -46,9 +46,10 @@ const theme = createTheme({
           },
           "@media (prefers-color-scheme: dark)": {
             "&:hover": {
-              backgroundColor: "rgba(255,255,255,0.7)",
-              color: "#000000",
+              backgroundColor: "rgba(255,255,255,0.9)",
             },
+            color: "#000000",
+            backgroundColor: "rgba(255,255,255,0.8)",
           },
           borderRadius: 0,
           minHeight: "55px",
