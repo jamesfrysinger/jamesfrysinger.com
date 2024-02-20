@@ -15,7 +15,7 @@ const SkillsExperience: FC = () => {
         leo, facilisis a condimentum id, dapibus et condimentum id, dapibus et
         condimentum id, dapibus et nulla.
       </Paragraph>
-      <div className="flex pt-4">
+      <div className="flex pt-1">
         <ul className="max-w-1/2 pr-6">
           <ListStyle>Strategy & Consulting</ListStyle>
           <ListStyle>E-commerce & Brand Websites</ListStyle>

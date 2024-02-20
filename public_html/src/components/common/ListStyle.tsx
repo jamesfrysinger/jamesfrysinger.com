@@ -6,9 +6,7 @@ interface IListStyle {
 const ListStyle: FC<IListStyle> = ({ children }) => {
   return (
     <li className="leading-7 sm:leading-9 sm:text-lg py-1 sm:py-0 flex">
-      <span className="block pr-2 text-neutral-400 dark:text-neutral-500">
-        +
-      </span>
+      <span className="block pr-2">+</span>
       <p className="block ">{children}</p>
     </li>
   );
