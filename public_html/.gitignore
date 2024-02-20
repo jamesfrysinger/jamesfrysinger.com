@@ -8,6 +8,8 @@
 # Ignore credentials file
 src/config/credentials/*
 
+backup
+
 # testing
 /coverage
 
