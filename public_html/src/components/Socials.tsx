@@ -26,29 +26,24 @@ const Socials: FC = () => {
     );
   };
   return (
-    <div className="mb-0">
-      <Section>
-        <div className="flex items-center">
-          <SocialButtons
-            icon={linkedin}
-            href="https://www.linkedin.com/in/james-frysinger-7b56134b/"
-            alt="LinkedIn Alt Text"
-          />
-          <SocialButtons
-            icon={github}
-            href="https://github.com/jamesfrysinger"
-            alt="LinkedIn Alt Text"
-          />
-          <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" />
-          <div className="text-md text-neutral-500 border-l-[1px] border-neutral-200 dark:border-neutral-700 pl-5">
-            Connect with me on LinkedIn, explore my GitHub or download my cv.
-            {/* Website designed
-            and developed by James Frysinger using ReactJs, TypeScript and
-            Tailwind. */}
-          </div>
+    <Section>
+      <div className="flex items-center">
+        <SocialButtons
+          icon={linkedin}
+          href="https://www.linkedin.com/in/james-frysinger-7b56134b/"
+          alt="LinkedIn Alt Text"
+        />
+        <SocialButtons
+          icon={github}
+          href="https://github.com/jamesfrysinger"
+          alt="LinkedIn Alt Text"
+        />
+        <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" />
+        <div className="text-md text-neutral-500 border-l-[1px] border-neutral-200 dark:border-neutral-700 pl-5">
+          Connect with me on LinkedIn, explore my GitHub or get my cv.
         </div>
-      </Section>
-    </div>
+      </div>
+    </Section>
   );
 };
 

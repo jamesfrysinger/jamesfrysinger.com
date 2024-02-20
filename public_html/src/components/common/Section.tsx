@@ -2,10 +2,15 @@ import { FC, ReactNode } from "react";
 
 interface ISection {
   children: ReactNode;
+  small?: boolean;
 }
-const Section: FC<ISection> = ({ children }) => {
+const Section: FC<ISection> = ({ children, small = false }) => {
   return (
-    <section className="section inline-flex flex-wrap my-10 sm:my-12">
+    <section
+      className={`section inline-flex flex-wrap ${
+        small ? "my-4 sm:my-6" : "my-10 sm:my-12"
+      }`}
+    >
       {children}
     </section>
   );

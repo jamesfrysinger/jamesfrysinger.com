@@ -16,7 +16,7 @@ const AboutMe: FC = () => {
           <img
             src={photoDT}
             alt=""
-            className="float-right w-full sm:w-1/2 min-w-[350px] sm:pl-10 py-2"
+            className="float-right w-full sm:w-1/2 min-w-[350px] sm:pl-10 py-2 opacity-95"
           />
         </picture>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
