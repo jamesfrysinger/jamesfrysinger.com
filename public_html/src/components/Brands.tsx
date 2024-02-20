@@ -12,7 +12,7 @@ import acha from "../assets/images/brand-logos/acha-logo.svg";
 import fanuka from "../assets/images/brand-logos/fanuka-logo.svg";
 import grindstone from "../assets/images/brand-logos/grindstone-logo.svg";
 import ucww from "../assets/images/brand-logos/ucww-logo.svg";
-import cascade from "../assets/images/brand-logos/cascade-logo.svg";
+import wolterskluwer from "../assets/images/brand-logos/wolterskluwer-logo.svg";
 import BrandLogo from "./common/BrandLogo";
 
 const Brands: FC = () => {
@@ -30,21 +30,20 @@ const Brands: FC = () => {
         <LogoGroup>
           <BrandLogo logo={nike} />
           <BrandLogo logo={calvinklein} />
-          <BrandLogo logo={tommyhilfiger} />
           <BrandLogo logo={pvh} />
+          <BrandLogo logo={tommyhilfiger} />
         </LogoGroup>
         <LogoGroup>
           <BrandLogo logo={vanheusen} />
           <BrandLogo logo={speedo} />
           <BrandLogo logo={izod} />
-          <BrandLogo logo={acha} />
+          <BrandLogo logo={wolterskluwer} />
         </LogoGroup>
         <LogoGroup>
-          <BrandLogo logo={grindstone} />
+          <BrandLogo logo={acha} />
           <BrandLogo logo={fanuka} />
-
+          <BrandLogo logo={grindstone} />
           <BrandLogo logo={ucww} />
-          <BrandLogo logo={cascade} />
         </LogoGroup>
       </div>
     </Section>

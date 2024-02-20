@@ -13,7 +13,7 @@ const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="flex justify-center  min-h-screen dark:bg-neutral-900 bg- dark:text-neutral-300">
-        <div className="w-full max-w-[768px] px-4 lg:px-0 m">
+        <div className="w-full max-w-[768px] px-8 lg:px-0 m">
           <Header />
           <AboutMe />
           <SkillsExperience />
