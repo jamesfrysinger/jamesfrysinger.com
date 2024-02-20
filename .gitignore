@@ -9,7 +9,7 @@
 src/config/credentials/*
 
 # Ignore backup folder
-backup
+/backup
 
 # testing
 /coverage
