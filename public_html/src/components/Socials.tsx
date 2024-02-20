@@ -15,7 +15,7 @@ const Socials: FC = () => {
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="mr-5 opacity-70 dark:opacity-60 hover:opacity-80 transition-opacity duration-300"
+        className="mr-5 opacity-70 hover:opacity-90 transition-opacity duration-300"
       >
         <img
           src={icon}

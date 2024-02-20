@@ -36,8 +36,8 @@ const Brands: FC = () => {
         <LogoGroup>
           <BrandLogo logo={vanheusen} />
           <BrandLogo logo={speedo} />
-          <BrandLogo logo={izod} />
           <BrandLogo logo={wolterskluwer} />
+          <BrandLogo logo={izod} />
         </LogoGroup>
         <LogoGroup>
           <BrandLogo logo={acha} />
