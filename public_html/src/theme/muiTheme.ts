@@ -49,7 +49,7 @@ const theme = createTheme({
               backgroundColor: "rgba(255,255,255,0.9)",
             },
             color: "#000000",
-            backgroundColor: "rgba(255,255,255,0.8)",
+            backgroundColor: "rgba(255,255,255,0.7)",
           },
           borderRadius: 0,
           minHeight: "55px",
