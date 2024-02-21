@@ -28,7 +28,7 @@ const Brands: FC = () => {
       />
       <div className="flex flex-wrap justify-start mt-2 w-full">
         <LogoGroup>
-          <BrandLogo height="33px" logo={nike} />
+          <BrandLogo height="38px" logo={nike} />
           <BrandLogo height="19px" logo={calvinklein} />
           <BrandLogo height="43px" logo={pvh} />
           <BrandLogo height="13px" logo={tommyhilfiger} />

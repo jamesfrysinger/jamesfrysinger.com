@@ -12,7 +12,7 @@ const Heading: FC<IHeading> = ({ heading, type = "h1", position }) => {
   return (
     <HeadingElement className={`inline-block w-full text-2xl ${position}`}>
       <span className="inline-block w-full">{heading}</span>
-      <span className="inline-block w-[40px] border-b border-neutral-200 dark:border-neutral-700 my-1.5"></span>
+      <span className="inline-block w-[40px] border-b border-neutral-300 dark:border-neutral-700 my-1.5"></span>
     </HeadingElement>
   );
 };

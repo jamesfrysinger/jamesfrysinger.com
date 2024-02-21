@@ -22,7 +22,7 @@ const theme = createTheme({
       styleOverrides: {
         underline: {
           "&:before": {
-            borderBottomColor: "rgb(229, 229, 229)",
+            borderBottomColor: "rgb(212 212 212)",
           },
           "@media (prefers-color-scheme: dark)": {
             "&:before": {

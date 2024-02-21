@@ -39,7 +39,7 @@ const Socials: FC = () => {
           alt="LinkedIn Alt Text"
         />
         <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" />
-        <div className="text-lg border-l-[1px] border-neutral-200 dark:border-neutral-700 pl-5">
+        <div className="text-lg border-l-[1px] border-neutral-300 dark:border-neutral-700 pl-5">
           Connect with me on LinkedIn, explore my GitHub or get my cv.
         </div>
       </div>
