@@ -5,7 +5,7 @@ interface IBrandLogo {
 }
 const BrandLogo: FC<IBrandLogo> = ({ logo, height }) => {
   return (
-    <div className="flex justify-center w-1/2 sm:w-1/4 py-4">
+    <div className="flex justify-center w-1/2 sm:w-1/4 py-5">
       <img
         src={logo}
         alt=""
