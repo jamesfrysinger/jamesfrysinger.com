@@ -7,7 +7,7 @@ interface ISection {
 const Section: FC<ISection> = ({ children, small = false }) => {
   return (
     <section
-      className={`section inline-flex flex-wrap ${
+      className={`w-full inline-flex flex-wrap ${
         small ? "my-4 sm:my-6" : "my-10 sm:my-12"
       }`}
     >

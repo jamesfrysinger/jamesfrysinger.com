@@ -1,6 +1,6 @@
-import linkedin from "../assets/images/social-icons/linkedin-icon.png";
-import github from "../assets/images/social-icons/github-icon.png";
-import cv from "../assets/images/social-icons/cv-icon.png";
+import linkedin from "../assets/images/social-icons/linkedin-icon.svg";
+import github from "../assets/images/social-icons/github-icon.svg";
+import cv from "../assets/images/social-icons/cv-icon.svg";
 import { FC } from "react";
 import Section from "./common/Section";
 
@@ -20,7 +20,7 @@ const Socials: FC = () => {
         <img
           src={icon}
           alt={alt}
-          className="dark:filter dark:invert max-w-[32px] max-h-[32px]"
+          className="dark:filter dark:invert w-[32px] h-[32px]"
         />
       </a>
     );

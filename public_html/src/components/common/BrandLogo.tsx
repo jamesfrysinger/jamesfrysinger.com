@@ -1,14 +1,16 @@
 import { FC } from "react";
 interface IBrandLogo {
   logo: string;
+  height?: string;
 }
-const BrandLogo: FC<IBrandLogo> = ({ logo }) => {
+const BrandLogo: FC<IBrandLogo> = ({ logo, height }) => {
   return (
-    <div className="w-1/2 sm:w-1/4 py-4">
+    <div className="flex justify-center w-1/2 sm:w-1/4 py-4">
       <img
         src={logo}
         alt=""
-        className="mx-auto dark:filter dark:invert dark:opacity-90"
+        className={`dark:filter dark:invert dark:opacity-90`}
+        style={{ height }}
       />
     </div>
   );
