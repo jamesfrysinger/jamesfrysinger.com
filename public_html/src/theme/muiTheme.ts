@@ -26,13 +26,17 @@ const theme = createTheme({
           },
           "@media (prefers-color-scheme: dark)": {
             "&:before": {
-              borderBottomColor: "rgb(64, 64, 64)", // Color for dark mode
+              borderBottomColor: "rgb(64, 64, 64)",
             },
           },
         },
         root: {
           minHeight: "55px",
           fontSize: "16px",
+          color: "#000000",
+          "@media (prefers-color-scheme: dark)": {
+            color: "rgb(212,212,212)",
+          },
         },
       },
     },

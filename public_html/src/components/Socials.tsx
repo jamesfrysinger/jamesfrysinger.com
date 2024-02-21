@@ -20,7 +20,7 @@ const Socials: FC = () => {
         <img
           src={icon}
           alt={alt}
-          className="dark:filter dark:invert w-[32px] h-[32px]"
+          className="dark:filter dark:invert min-w-[34px] min-h-[34px] max-w-[34px] max-h-[34px]"
         />
       </a>
     );
@@ -39,7 +39,7 @@ const Socials: FC = () => {
           alt="LinkedIn Alt Text"
         />
         <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" />
-        <div className="text-md border-l-[1px] border-neutral-200 dark:border-neutral-700 pl-5">
+        <div className="text-lg border-l-[1px] border-neutral-200 dark:border-neutral-700 pl-5">
           Connect with me on LinkedIn, explore my GitHub or get my cv.
         </div>
       </div>
