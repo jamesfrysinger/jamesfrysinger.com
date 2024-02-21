@@ -50,9 +50,9 @@ const Brands: FC = () => {
           <BrandLogo height="22px" logo={smithfield} />
         </LogoGroup>
         <LogoGroup>
-          <BrandLogo height="20px" logo={acha} />
-          <BrandLogo height="49px" logo={fanuka} />
           <BrandLogo height="24px" logo={grindstone} />
+          <BrandLogo height="26px" logo={acha} />
+          <BrandLogo height="49px" logo={fanuka} />
           <BrandLogo height="25px" logo={ucww} />
         </LogoGroup>
       </div>

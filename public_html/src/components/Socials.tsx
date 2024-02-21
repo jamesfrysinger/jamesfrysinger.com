@@ -5,17 +5,19 @@ import { FC } from "react";
 import Section from "./common/Section";
 
 const Socials: FC = () => {
-  const SocialButtons: FC<{ icon: string; href: string; alt: string }> = ({
-    icon,
-    href,
-    alt,
-  }) => {
+  const SocialButtons: FC<{
+    icon: string;
+    href: string;
+    alt: string;
+    download?: boolean;
+  }> = ({ icon, href, alt, download }) => {
     return (
       <a
         href={href}
         target="_blank"
         rel="noreferrer"
         className="mr-6 opacity-80 hover:opacity-100 transition-opacity duration-300"
+        download={download}
       >
         <img
           src={icon}
@@ -38,8 +40,8 @@ const Socials: FC = () => {
           href="https://github.com/jamesfrysinger"
           alt="LinkedIn Alt Text"
         />
-        <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" />
-        <div className="text-lg border-l-[1px] border-neutral-300 dark:border-neutral-700 pl-6 w-auto sm:w-2/3">
+        <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" download />
+        <div className="sm:text-lg border-l-[1px] border-neutral-300 dark:border-neutral-700 pl-6 w-auto sm:w-2/3">
           Connect with me on LinkedIn, browse my GitHub, or download my CV.
         </div>
       </div>

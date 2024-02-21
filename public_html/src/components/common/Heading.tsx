@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Divider from "./Divider";
 
 interface IHeading {
   heading: string;
@@ -12,7 +13,7 @@ const Heading: FC<IHeading> = ({ heading, type = "h1", position }) => {
   return (
     <HeadingElement className={`inline-block w-full text-2xl ${position}`}>
       <span className="inline-block w-full">{heading}</span>
-      <span className="inline-block w-[40px] border-b border-neutral-300 dark:border-neutral-700 my-1.5"></span>
+      <Divider />
     </HeadingElement>
   );
 };
