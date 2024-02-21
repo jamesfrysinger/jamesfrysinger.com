@@ -31,7 +31,7 @@ const Brands: FC = () => {
           <BrandLogo height="32px" logo={nike} />
           <BrandLogo height="18px" logo={calvinklein} />
           <BrandLogo height="42px" logo={pvh} />
-          <BrandLogo height="13px" logo={tommyhilfiger} />
+          <BrandLogo height="12px" logo={tommyhilfiger} />
         </LogoGroup>
         <LogoGroup>
           <BrandLogo height="15px" logo={vanheusen} />
@@ -42,7 +42,7 @@ const Brands: FC = () => {
         <LogoGroup>
           <BrandLogo height="19px" logo={acha} />
           <BrandLogo height="48px" logo={fanuka} />
-          <BrandLogo height="24px" logo={grindstone} />
+          <BrandLogo height="23px" logo={grindstone} />
           <BrandLogo height="24px" logo={ucww} />
         </LogoGroup>
       </div>
