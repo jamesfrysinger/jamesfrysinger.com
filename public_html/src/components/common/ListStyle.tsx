@@ -1,7 +1,7 @@
 import { FC, ReactNode } from "react";
 
 interface IListStyle {
-  children: ReactNode;
+  children?: ReactNode;
 }
 const ListStyle: FC<IListStyle> = ({ children }) => {
   return (

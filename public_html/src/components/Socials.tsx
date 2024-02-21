@@ -15,12 +15,12 @@ const Socials: FC = () => {
         href={href}
         target="_blank"
         rel="noreferrer"
-        className="mr-5 opacity-80 hover:opacity-100 transition-opacity duration-300"
+        className="mr-6 opacity-80 hover:opacity-100 transition-opacity duration-300"
       >
         <img
           src={icon}
           alt={alt}
-          className="dark:filter dark:invert min-w-[34px] min-h-[34px] max-w-[34px] max-h-[34px]"
+          className="dark:filter dark:invert min-w-[36px] min-h-[36px] max-w-[36px] max-h-[36px]"
         />
       </a>
     );
@@ -39,8 +39,8 @@ const Socials: FC = () => {
           alt="LinkedIn Alt Text"
         />
         <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" />
-        <div className="text-lg border-l-[1px] border-neutral-300 dark:border-neutral-700 pl-5">
-          Connect with me on LinkedIn, explore my GitHub or get my cv.
+        <div className="text-lg border-l-[1px] border-neutral-300 dark:border-neutral-700 pl-6 w-auto sm:w-2/3">
+          Connect with me on LinkedIn, browse my GitHub, or download my CV.
         </div>
       </div>
     </Section>

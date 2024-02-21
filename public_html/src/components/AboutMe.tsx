@@ -19,13 +19,14 @@ const AboutMe: FC = () => {
             className="float-right w-full sm:w-1/2 min-w-[350px] sm:pl-10 py-2 opacity-95"
           />
         </picture>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
-        fermentum lectus at fringilla. Sed ut blandit quam. Suspendisse lacinia
-        sed lacus non tincidunt. Donec bibendum faucibus felis. Aenean lectus
-        leo, facilisis a condimentum id, dapibus et condimentum id, dapibus et
-        condimentum id, dapibus et nulla. Donec bibendum faucibus felis. Aenean
-        lectus leo, facilisis a condimentum id, dapibus et condimentum id,
-        dapibus et condimentum id, dapibus et nulla.
+        James Frysinger, a software and e-commerce development engineer based in
+        the New York Metropolitan area. With a proven track record, I specialize
+        in crafting sleek UI/UX interfaces for esteemed brands and enterprises.
+        My expertise lies in employing clean, industry-standard coding practices
+        to deliver engaging experiences that seamlessly bridge brands with their
+        customers. Committed to staying ahead of the curve, I continuously
+        refine my skills to ensure the solutions I deliver prioritize
+        user-centric design, enhancing ease of use.
       </Paragraph>
     </Section>
   );
