@@ -4,29 +4,30 @@ import cv from "../assets/images/social-icons/cv-icon.svg";
 import { FC } from "react";
 import Section from "./common/Section";
 
+export const SocialButtons: FC<{
+  icon: string;
+  href: string;
+  alt: string;
+  download?: boolean;
+}> = ({ icon, href, alt, download }) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="mr-6 opacity-80 hover:opacity-100 transition-opacity duration-300"
+      download={download}
+    >
+      <img
+        src={icon}
+        alt={alt}
+        className="dark:filter dark:invert min-w-[36px] min-h-[36px] max-w-[36px] max-h-[36px]"
+      />
+    </a>
+  );
+};
+
 const Socials: FC = () => {
-  const SocialButtons: FC<{
-    icon: string;
-    href: string;
-    alt: string;
-    download?: boolean;
-  }> = ({ icon, href, alt, download }) => {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-        className="mr-6 opacity-80 hover:opacity-100 transition-opacity duration-300"
-        download={download}
-      >
-        <img
-          src={icon}
-          alt={alt}
-          className="dark:filter dark:invert min-w-[36px] min-h-[36px] max-w-[36px] max-h-[36px]"
-        />
-      </a>
-    );
-  };
   return (
     <Section>
       <div className="flex items-center">
