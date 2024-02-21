@@ -8,7 +8,7 @@ const Section: FC<ISection> = ({ children, small = false }) => {
   return (
     <section
       className={`w-full inline-flex flex-wrap ${
-        small ? "my-4 sm:my-6" : "my-10 sm:my-12"
+        small ? "my-4 sm:my-6" : "my-10"
       }`}
     >
       {children}
