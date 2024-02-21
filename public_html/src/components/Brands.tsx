@@ -13,6 +13,10 @@ import fanuka from "../assets/images/brand-logos/fanuka-logo.svg";
 import grindstone from "../assets/images/brand-logos/grindstone-logo.svg";
 import ucww from "../assets/images/brand-logos/ucww-logo.svg";
 import wolterskluwer from "../assets/images/brand-logos/wolterskluwer-logo.svg";
+import clubmonaco from "../assets/images/brand-logos/clubmonaco-logo.svg";
+import duckbrand from "../assets/images/brand-logos/duckbrand-logo.svg";
+import reynolds from "../assets/images/brand-logos/reynolds-logo.svg";
+import smithfield from "../assets/images/brand-logos/smithfield-logo.svg";
 import BrandLogo from "./common/BrandLogo";
 
 const Brands: FC = () => {
@@ -38,6 +42,12 @@ const Brands: FC = () => {
           <BrandLogo height="24px" logo={speedo} />
           <BrandLogo height="40px" logo={wolterskluwer} />
           <BrandLogo height="16px" logo={izod} />
+        </LogoGroup>
+        <LogoGroup>
+          <BrandLogo height="10px" logo={clubmonaco} />
+          <BrandLogo height="72px" logo={duckbrand} />
+          <BrandLogo height="28px" logo={reynolds} />
+          <BrandLogo height="22px" logo={smithfield} />
         </LogoGroup>
         <LogoGroup>
           <BrandLogo height="20px" logo={acha} />
