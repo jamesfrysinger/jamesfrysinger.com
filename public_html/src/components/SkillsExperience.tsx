@@ -18,7 +18,7 @@ const SkillsExperience: FC = () => {
       <div className="flex flex-wrap pt-3">
         <ul className="w-full sm:w-1/2 sm:pr-6">
           <ListStyle>
-            ReactJS, TypeScript, JavaScript, HTML, CSS, , jQuery, MySQL, PHP
+            ReactJS, TypeScript, JavaScript, HTML, CSS, jQuery, MySQL, PHP
           </ListStyle>
           <ListStyle>
             E-commerce platforms: SalesForce, IBM WebSphere, Shopify, Wordpress

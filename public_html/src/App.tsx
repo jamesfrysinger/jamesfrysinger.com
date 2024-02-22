@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@mui/material";
 import AboutMe from "./components/AboutMe";
 import Brands from "./components/Brands";
-import ContactMe from "./components/ContactMe";
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import SkillsExperience from "./components/SkillsExperience";
 import "./styles/App.css";
@@ -20,7 +20,7 @@ const App: FC = () => {
           <Socials />
           <SkillsExperience />
           <Brands />
-          <ContactMe />
+          <Contact />
           <Footer />
         </div>
       </div>

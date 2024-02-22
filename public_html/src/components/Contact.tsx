@@ -8,26 +8,32 @@ import {
 import Heading from "./common/Heading";
 import Section from "./common/Section";
 import emailjs from "emailjs-com";
-import { FC, FormEvent, useRef, useState } from "react";
+import { FC, useRef, useState } from "react";
 import {
   SERVICE_ID,
   TEMPLATE_ID,
   USER_ID,
 } from "../config/credentials/credentials";
 import { Close } from "@mui/icons-material";
+import { useForm } from "react-hook-form";
 
-const ContactMe: FC = () => {
+const Contact: FC = () => {
   const [snack, setSnack] = useState<{
     isOpen: boolean;
     message: string;
   } | null>(null);
   const handleClose = () => setSnack(null);
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
   const [disabled, setDisabled] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handleOnSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const onSubmit = () => {
     setDisabled(true);
     if (formRef.current) {
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID).then(
@@ -59,7 +65,7 @@ const ContactMe: FC = () => {
       <FormControl className="w-full">
         <form
           ref={formRef}
-          onSubmit={handleOnSubmit}
+          onSubmit={handleSubmit(onSubmit)}
           className="w-full space-y-4 pt-2"
         >
           <TextField
@@ -67,20 +73,29 @@ const ContactMe: FC = () => {
             label="Your name"
             type="text"
             id="form-input-control-email"
-            name="user_name"
             required
             className="w-full dark:text-white"
             disabled={disabled}
+            {...register("user_name", { required: true })}
+            error={Boolean(errors.user_name)}
           />
+
           <TextField
             variant="standard"
             label="Your email address"
             type="email"
             id="form-input-control-last-name"
-            name="user_email"
-            required
             className="w-full"
             disabled={disabled}
+            {...register("user_email", {
+              required: "required",
+              pattern: {
+                value: /\S+@\S+\.\S+/,
+                message: "Entered value does not match email format",
+              },
+              maxLength: 500,
+            })}
+            error={Boolean(errors.user_email)}
           />
           <TextField
             variant="standard"
@@ -88,10 +103,10 @@ const ContactMe: FC = () => {
             multiline
             type="text"
             id="form-textarea-control-opinion"
-            name="user_message"
-            required
             className="w-full"
             disabled={disabled}
+            {...register("user_message", { required: true })}
+            error={Boolean(errors.user_message)}
           />
           <Button
             variant="contained"
@@ -126,4 +141,4 @@ const ContactMe: FC = () => {
   );
 };
 
-export default ContactMe;
+export default Contact;

@@ -4,12 +4,17 @@ import "./styles/index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ReactGA from "react-ga4";
+import TagManager from "react-gtm-module";
 
 ReactGA.initialize("G-EBQC018TBM");
+TagManager.initialize({
+  gtmId: "GTM-MD7ZLML8",
+});
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <App />

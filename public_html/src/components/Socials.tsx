@@ -21,7 +21,7 @@ export const SocialButtons: FC<{
       <img
         src={icon}
         alt={alt}
-        className="dark:filter dark:invert min-w-[36px] min-h-[36px] max-w-[36px] max-h-[36px]"
+        className="dark:filter dark:invert min-w-[34px] min-h-[34px] w-[34px] h-[34px]"
       />
     </a>
   );
@@ -41,7 +41,12 @@ const Socials: FC = () => {
           href="https://github.com/jamesfrysinger"
           alt="LinkedIn Alt Text"
         />
-        <SocialButtons icon={cv} href="#" alt="LinkedIn Alt Text" download />
+        <SocialButtons
+          icon={cv}
+          href="/assets/downloads/resume/James-Frysinger-Resume-2024-02-21.pdf"
+          alt="LinkedIn Alt Text"
+          download
+        />
         <div className="sm:text-lg border-l-[1px] border-neutral-300 dark:border-neutral-700 pl-6 w-auto sm:w-2/3">
           Connect with me on LinkedIn, browse my GitHub, or download my CV.
         </div>
