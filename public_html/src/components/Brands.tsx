@@ -35,7 +35,7 @@ const Brands: FC = () => {
           <BrandLogo height="40px" logo={nike} />
           <BrandLogo height="18px" logo={calvinklein} />
           <BrandLogo height="43px" logo={pvh} />
-          <BrandLogo height="12px" logo={tommyhilfiger} />
+          <BrandLogo height="11px" logo={tommyhilfiger} />
         </LogoGroup>
         <LogoGroup>
           <BrandLogo height="15px" logo={vanheusen} />

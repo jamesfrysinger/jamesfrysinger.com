@@ -33,7 +33,7 @@ const Socials: FC = () => {
       <div className="flex items-center">
         <SocialButtons
           icon={linkedin}
-          href="https://www.linkedin.com/in/james-frysinger-7b56134b/"
+          href="https://www.linkedin.com/in/james-frysinger"
           alt="LinkedIn Alt Text"
         />
         <SocialButtons
