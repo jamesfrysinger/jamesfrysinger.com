@@ -33,26 +33,26 @@ const Brands: FC = () => {
       <div className="flex flex-wrap justify-start mt-2 w-full">
         <LogoGroup>
           <BrandLogo height="38px" logo={nike} />
-          <BrandLogo height="19px" logo={calvinklein} />
+          <BrandLogo height="18px" logo={calvinklein} />
           <BrandLogo height="43px" logo={pvh} />
           <BrandLogo height="13px" logo={tommyhilfiger} />
         </LogoGroup>
         <LogoGroup>
-          <BrandLogo height="16px" logo={vanheusen} />
+          <BrandLogo height="15px" logo={vanheusen} />
           <BrandLogo height="24px" logo={speedo} />
-          <BrandLogo height="40px" logo={wolterskluwer} />
+          <BrandLogo height="44px" logo={wolterskluwer} />
           <BrandLogo height="16px" logo={izod} />
         </LogoGroup>
         <LogoGroup>
           <BrandLogo height="10px" logo={clubmonaco} />
           <BrandLogo height="72px" logo={duckbrand} />
-          <BrandLogo height="28px" logo={reynolds} />
-          <BrandLogo height="22px" logo={smithfield} />
+          <BrandLogo height="29px" logo={reynolds} />
+          <BrandLogo height="23px" logo={smithfield} />
         </LogoGroup>
         <LogoGroup>
           <BrandLogo height="24px" logo={grindstone} />
           <BrandLogo height="26px" logo={acha} />
-          <BrandLogo height="49px" logo={fanuka} />
+          <BrandLogo height="50px" logo={fanuka} />
           <BrandLogo height="25px" logo={ucww} />
         </LogoGroup>
       </div>
