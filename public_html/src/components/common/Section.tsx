@@ -10,7 +10,7 @@ const Section: FC<ISection> = ({ children, small = false, style }) => {
     <section
       style={style}
       className={`w-full inline-flex flex-wrap ${
-        small ? "my-4 sm:my-6" : "my-10"
+        small ? `my-4 sm:my-6` : `my-10`
       }`}
     >
       {children}
