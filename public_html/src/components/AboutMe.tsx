@@ -15,7 +15,7 @@ const AboutMe: FC = () => {
           <source media="(min-width: 640px)" srcSet={photoDT} />
           <img
             src={photoDT}
-            alt=""
+            alt="Photo of James Frysinger Software and E-Commerce Engineer"
             className="float-right w-full sm:w-1/2 min-w-[350px] sm:pl-10 py-2 opacity-95"
           />
         </picture>
