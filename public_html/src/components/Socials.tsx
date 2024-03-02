@@ -29,7 +29,7 @@ export const SocialButtons: FC<{
 
 const Socials: FC = () => {
   return (
-    <Section>
+    <Section small>
       <div className="flex items-center">
         <SocialButtons
           icon={linkedin}
