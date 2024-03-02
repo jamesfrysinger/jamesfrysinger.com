@@ -61,7 +61,7 @@ const Contact: FC = () => {
 
   return (
     <Section>
-      <Heading heading="Connect With Me" />
+      <Heading heading="Connect With Me" type="h2" />
       <FormControl className="w-full">
         <form
           ref={formRef}

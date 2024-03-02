@@ -25,11 +25,7 @@ const Brands: FC = () => {
   };
   return (
     <Section>
-      <Heading
-        heading="Brands I've Worked With"
-        type="h3"
-        // position="text-center sm:text-left"
-      />
+      <Heading heading="Brands I've Worked With" type="h2" />
       <div className="flex flex-wrap justify-start mt-2 w-full">
         <LogoGroup>
           <BrandLogo height="40px" logo={nike} />

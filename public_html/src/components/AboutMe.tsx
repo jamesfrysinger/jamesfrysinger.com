@@ -8,7 +8,7 @@ import Section from "./common/Section";
 const AboutMe: FC = () => {
   return (
     <Section>
-      <Heading heading="About Me" />
+      <Heading heading="About Me" type="h2" />
       <Paragraph>
         <picture>
           <source media="(max-width: 639px)" srcSet={photoMO} />

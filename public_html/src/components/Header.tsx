@@ -4,7 +4,13 @@ import logo from "../assets/images/jamesfrysinger-logo.svg";
 const Header: FC = () => {
   return (
     <header className="mb-6 sm:mb-10">
-      <img src={logo} alt="" className="w-[100px] dark:filter dark:invert" />
+      <h1>
+        <img
+          src={logo}
+          alt="James Frysinger Software and E-Commerce Engineer"
+          className="w-[100px] dark:filter dark:invert"
+        />
+      </h1>
     </header>
   );
 };
