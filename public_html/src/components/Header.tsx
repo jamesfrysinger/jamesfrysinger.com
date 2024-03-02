@@ -4,7 +4,7 @@ import logo from "../assets/images/jamesfrysinger-logo.svg";
 const Header: FC = () => {
   return (
     <header className="mb-6 sm:mb-10">
-      <h1>
+      <h1 style={{ margin: 0, padding: 0, display: "block" }}>
         <img
           src={logo}
           alt="James Frysinger Software and E-Commerce Engineer"
