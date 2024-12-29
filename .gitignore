@@ -1,1 +1,58 @@
-node_modules
+# Node.js dependencies
+node_modules/
+
+# Next.js build output
+.next/
+
+# Tailwind CSS output (if using Tailwind)
+*.css.map
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache and other temporary files
+.cache/
+out/
+dist/
+*.lock
+*.tmp
+
+# TypeScript
+*.tsbuildinfo
+
+# Static export (if running `next export`)
+out/
+
+# Coverage reports (if using test coverage)
+coverage/
+
+# ESLint cache
+.eslintcache
+
+# Storybook files (if using Storybook)
+.storybook/
+storybook-static/
+
+# Custom ignore (adjust based on your setup)
+public/uploads/ # Example for large public assets not under version control
