@@ -33,10 +33,10 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
             className={`
               ${
                 isOpen ? "flex" : "hidden"
-              } fixed items-center top-0 left-0 w-screen h-screen bg-white pl-8 pr-8 
+              } fixed items-center top-0 left-0 w-screen h-screen bg-[var(--background)] pl-8 pr-8 
               md:flex md:relative md:top-auto md:left-auto md:w-auto md:h-auto md:bg-transparent`}
           >
-            <div className="flex flex-wrap md:space-x-8">
+            <div className="flex flex-wrap md:space-x-8 space-y-2 md:space-y-0">
               <Button
                 text="Work"
                 className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base"

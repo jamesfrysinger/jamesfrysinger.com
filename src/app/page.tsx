@@ -49,9 +49,11 @@ const Home = () => {
         <Technology sectionsRef={sectionsRef} />
         <Contact sectionsRef={sectionsRef} />
       </div>
-      <div className="wave"></div>
-      <div className="wave"></div>
-      <div className="wave"></div>
+      <div className="wave active">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </>
   );
 };

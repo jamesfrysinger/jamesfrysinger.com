@@ -5,15 +5,15 @@
 :root {
   --background: #d8dfd8;
   --foreground: #719068;
+  --animation: rgba(29, 46, 5, 0.35);
   --font-nunito: "Nunito", sans-serif;
-  --animation: rgba(27, 44, 3, 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1d221d;
     --foreground: #83997e;
-    --animation: rgb(255 255 255 / 25%);
+    --animation: rgba(95, 123, 58, 0.35);
   }
 }
 
@@ -55,8 +55,13 @@ button#hamburger-menu::before {
 .open button#hamburger-menu::after {
   transform: rotate(-45deg) translate(0.35rem, -0.35rem);
 }
-
 .wave {
+  display: none;
+}
+.wave.active {
+  display: block;
+}
+.wave.active div {
   background: var(--animation);
   border-radius: 1000% 1000% 0 0;
   position: fixed;
@@ -64,22 +69,22 @@ button#hamburger-menu::before {
   height: 14em;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
-  opacity: 0.1;
+  opacity: 0.12;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
 
-.wave:nth-of-type(2) {
+.wave.active div:nth-of-type(2) {
   bottom: -1.25em;
   animation: wave 18s linear reverse infinite;
-  opacity: 0.1;
+  opacity: 0.12;
 }
 
-.wave:nth-of-type(3) {
+.wave.active div:nth-of-type(3) {
   bottom: -2.5em;
   animation: wave 20s -1s reverse infinite;
-  opacity: 0.1;
+  opacity: 0.12;
 }
 
 @keyframes wave {
