@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: #eaedea;
-  --foreground: #8faa88;
+  --background: #d8dfd8;
+  --foreground: #719068;
   --font-nunito: "Nunito", sans-serif;
+  --animation: rgba(27, 44, 3, 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #eaedea;
-    --foreground: #8faa88;
+    --background: #1d221d;
+    --foreground: #83997e;
+    --animation: rgb(255 255 255 / 25%);
   }
 }
 
@@ -19,6 +21,85 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-nunito);
-  font-size: 20px;
   letter-spacing: 0.25px;
+}
+
+svg#logo path {
+  fill: var(--foreground);
+}
+
+button#hamburger-menu,
+button#hamburger-menu::before,
+button#hamburger-menu::after {
+  content: "";
+  width: 1.5rem;
+  height: 0.125rem;
+  margin: 0.35rem 0;
+  background: var(--foreground);
+}
+button#hamburger-menu::before,
+button#hamburger-menu::after {
+  transition: all 250ms ease;
+  display: block;
+}
+button#hamburger-menu::before {
+  margin-top: 0.45rem;
+}
+
+.open button#hamburger-menu {
+  background-color: transparent;
+}
+.open button#hamburger-menu::before {
+  transform: rotate(45deg);
+}
+.open button#hamburger-menu::after {
+  transform: rotate(-45deg) translate(0.35rem, -0.35rem);
+}
+
+.wave {
+  background: var(--animation);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 14em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.1;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.1;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
 }

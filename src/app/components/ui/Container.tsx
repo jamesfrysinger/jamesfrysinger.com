@@ -1,12 +1,14 @@
-import { ReactElement, ReactNode } from "react";
-
 const Container = ({
+  className,
   children,
 }: Readonly<{
+  className?: string;
   children: React.ReactNode;
 }>) => {
   return (
-    <div className="max-w-[1100px] mt-[80px] mb-[80px] ml-auto mr-auto pl-12 pr-12 box-content">
+    <div
+      className={`max-w-[1100px] ml-auto mr-auto pl-8 pr-8 box-content ${className}`}
+    >
       {children}
     </div>
   );

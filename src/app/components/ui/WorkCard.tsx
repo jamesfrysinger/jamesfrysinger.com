@@ -1,11 +1,6 @@
+import { IWorkCard } from "@/app/types/Types";
 import Image from "next/image";
 
-interface IWorkCard {
-  brand: string;
-  title: string;
-  desc: string;
-  image: string;
-}
 const WorkCard = ({ brand, title, desc, image }: IWorkCard) => {
   return (
     <div className="mb-12">
@@ -16,7 +11,7 @@ const WorkCard = ({ brand, title, desc, image }: IWorkCard) => {
         alt={`${title} for ${brand}`}
         className="rounded-md"
       />
-      <div className="pt-4 pl-6 pr-6">
+      <div className="p-4 pl-2 pr-2">
         <p>
           <span className="font-bold">{brand}</span>
           <br />

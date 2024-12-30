@@ -28,6 +28,6 @@ export const experienceData: IExperienceData = [
   {
     period: "2006 - 2012",
     title: "Website Developer",
-    brand: "Ante Up Audio, Digital-Day Creative Group, Quez Media",
+    brand: "Digital-Day Creative Group, Quez Media, Ante Up Audio",
   },
 ];

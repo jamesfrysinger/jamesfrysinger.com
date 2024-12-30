@@ -1,19 +1,25 @@
 import WorkCard from "../ui/WorkCard";
 import { workData as data } from "@/app/data/WorkData";
 import Container from "../ui/Container";
+import { FC } from "react";
+import { ISectionsProps } from "@/app/types/Types";
 
-const Work = () => {
+const Work: FC<ISectionsProps> = ({ sectionsRef }) => {
   return (
-    <section>
-      <Container>
-        <h1 className="text-[60px] leading-[100%] font-light">
+    <section
+      ref={(el) => {
+        sectionsRef.current.work = el;
+      }}
+    >
+      <Container className="mt-[3rem] mb-[3rem] md:mt-[4rem] md:mb-[4rem]">
+        <h2 className="text-[3rem] md:text-[3.75rem] leading-[100%] font-light">
           Selected
           <br />
           Works
-        </h1>
+        </h2>
       </Container>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-2 pl-2 pr-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6 pl-6 pr-6">
         {data.map((item, index) => (
           <WorkCard
             brand={item.brand}

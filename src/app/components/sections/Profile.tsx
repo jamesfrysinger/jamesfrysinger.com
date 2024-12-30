@@ -1,14 +1,20 @@
 import Container from "@/app/components/ui/Container";
 import { experienceData as data } from "@/app/data/ExperienceData";
+import { ISectionsProps } from "@/app/types/Types";
+import { FC } from "react";
 
-const Profile = () => {
+const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
   return (
-    <section>
-      <Container>
-        <h1 className="text-[60px] leading-[100%] font-light">Profile</h1>
-      </Container>
-      <Container>
-        <p className="text-[1.75rem] leading-[150%]">
+    <section
+      ref={(el) => {
+        sectionsRef.current.profile = el;
+      }}
+    >
+      <Container className="mt-[2rem] md:mt-[4rem]">
+        <h2 className="text-[3rem] md:text-[3.75rem] leading-[100%] font-light">
+          Profile
+        </h2>
+        <p className="text-[1.6rem] md:text-[1.75rem] leading-[150%] pt-6">
           Lorem ipsum odor amet, consectetuer adipiscing elit. Mus placerat cras
           tellus parturient tempor sagittis. Semper placerat vitae faucibus
           accumsan tellus curabitur fusce facilisi. Aliquam quis rhoncus
@@ -22,7 +28,7 @@ const Profile = () => {
           congue mauris. Semper placerat vitae faucibus.
         </p>
         <div className="md:flex pt-6">
-          <div className="font-bold w-1/4 pt-3">Experience</div>
+          <h3 className="font-bold w-1/4 pt-3 pb-4">Experience</h3>
           <div>
             {data.map((item, index) => {
               return (

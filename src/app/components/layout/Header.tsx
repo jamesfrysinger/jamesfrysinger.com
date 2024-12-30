@@ -1,24 +1,68 @@
-import Image from "next/image";
-import Logo from "@/../public/images/logo.svg";
+import Logo from "@/app/components/ui/Logo";
 import Button from "../ui/Button";
+import { FC } from "react";
+import { IIsOpen, ISections, ISectionsProps } from "@/app/types/Types";
+import Hamburger from "./HeaderHamburger";
 
-const Header = () => {
+const Header: FC<ISectionsProps & IIsOpen> = ({
+  sectionsRef,
+  isOpen,
+  setIsOpen,
+}) => {
+  const scrollToSection = (sectionKey: keyof ISections) => {
+    const section = sectionsRef.current[sectionKey];
+    if (section) {
+      setIsOpen(false);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="max-w-[1100px] ml-auto mr-auto pl-12 pr-12 pt-12 box-content">
-      <div className="flex items-center">
-        <div className="grow">
-          <Image src={Logo} alt="James Frysinger" className="h-[140px]" />
+    <div
+      className={`max-w-[1100px] ml-auto mr-auto pl-8 pr-8 pt-12 box-content peer ${
+        isOpen ? `open` : ``
+      }`}
+    >
+      <div className="flex md:items-center">
+        <div className="grow z-10">
+          <Logo />
         </div>
-        <div>
-          <nav className="flex space-x-8">
-            <Button text="Work" />
-            <Button text="Profile" />
-            <Button text="Technology" />
-            <Button text="Contact" />
-          </nav>
-        </div>
+        <nav>
+          <div
+            id="nav-menu"
+            className={`
+              ${
+                isOpen ? "flex" : "hidden"
+              } fixed items-center top-0 left-0 w-screen h-screen bg-white pl-8 pr-8 
+              md:flex md:relative md:top-auto md:left-auto md:w-auto md:h-auto md:bg-transparent`}
+          >
+            <div className="flex flex-wrap md:space-x-8">
+              <Button
+                text="Work"
+                className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base"
+                onclick={() => scrollToSection("work")}
+              />
+              <Button
+                text="Profile"
+                className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base"
+                onclick={() => scrollToSection("profile")}
+              />
+              <Button
+                text="Technology"
+                className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base"
+                onclick={() => scrollToSection("technology")}
+              />
+              <Button
+                text="Contact"
+                className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base"
+                onclick={() => scrollToSection("contact")}
+              />
+            </div>
+          </div>
+        </nav>
+        <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
-      <div className="mt-[80px]">
+      <div className="mt-[3rem] md:mt-[4rem]">
         <h1>
           James Frysinger
           <br />

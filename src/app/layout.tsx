@@ -20,7 +20,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased md:text-[20px]`}>{children}</body>
     </html>
   );
 };
