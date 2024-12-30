@@ -1,4 +1,5 @@
 import Container from "@/app/components/ui/Container";
+import { experienceData as data } from "@/app/data/ExperienceData";
 
 const Profile = () => {
   return (
@@ -7,7 +8,7 @@ const Profile = () => {
         <h1 className="text-[60px] leading-[100%] font-light">Profile</h1>
       </Container>
       <Container>
-        <p className="text-[32px] leading-[150%]">
+        <p className="text-[1.75rem] leading-[150%]">
           Lorem ipsum odor amet, consectetuer adipiscing elit. Mus placerat cras
           tellus parturient tempor sagittis. Semper placerat vitae faucibus
           accumsan tellus curabitur fusce facilisi. Aliquam quis rhoncus
@@ -20,10 +21,22 @@ const Profile = () => {
           curabitur fusce facilisi. Aliquam quis rhoncus vulputate convallis
           congue mauris. Semper placerat vitae faucibus.
         </p>
-      </Container>
-      <Container>
-        <div>Experience</div>
-        <div>Experience</div>
+        <div className="md:flex pt-6">
+          <div className="font-bold w-1/4 pt-3">Experience</div>
+          <div>
+            {data.map((item, index) => {
+              return (
+                <p className="pt-3 pb-3" key={index}>
+                  {item.period}
+                  <br />
+                  <span className="font-bold">{item.title}</span>
+                  <br />
+                  {item.brand}
+                </p>
+              );
+            })}
+          </div>
+        </div>
       </Container>
     </section>
   );

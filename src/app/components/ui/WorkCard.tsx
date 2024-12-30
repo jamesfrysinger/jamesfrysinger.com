@@ -8,7 +8,7 @@ interface IWorkCard {
 }
 const WorkCard = ({ brand, title, desc, image }: IWorkCard) => {
   return (
-    <div className="mb-8">
+    <div className="mb-12">
       <Image
         src={`/images/work/${image}`}
         width={1710}
@@ -17,12 +17,11 @@ const WorkCard = ({ brand, title, desc, image }: IWorkCard) => {
         className="rounded-md"
       />
       <div className="pt-4 pl-6 pr-6">
-        <p className="text-[#A1B79C]">
+        <p>
           <span className="font-bold">{brand}</span>
           <br />
-          <span className="text-[#8FAA88]">{title}</span>
+          {title}
           <br />
-
           {desc}
         </p>
       </div>

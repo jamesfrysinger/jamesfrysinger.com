@@ -9,13 +9,13 @@ export const workData: IWorkData = [
   {
     brand: "Foot Locker",
     title: "Senior Engineer, Web Developer",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
+    desc: "Lorem ipsum dolor sit amet, Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
     image: "footlocker.png",
   },
   {
     brand: "Nike",
     title: "Software Developer",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
+    desc: "Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
     image: "nike.png",
   },
   {
@@ -27,37 +27,37 @@ export const workData: IWorkData = [
   {
     brand: "Tommy Hilfiger",
     title: "Senior Developer",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
     image: "tommyhilfiger.png",
   },
   {
     brand: "Speedo",
     title: "Senior Developer",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
+    desc: "Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
     image: "speedo.png",
   },
   {
     brand: "Champs Sports",
     title: "Senior Engineer, Web Developer",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
     image: "champs.png",
   },
   {
     brand: "IZOD",
     title: "Senior Developer",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
     image: "izod.png",
   },
   {
     brand: "Club Monaco",
     title: "Senior Developer",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa.",
     image: "clubmonaco.png",
   },
   {
     brand: "PVH",
     title: "Senior Developer",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Aenean quis efficitur leo, quis ornare massa. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget nisl risus. Nunc sed mauris a quam viverra vehicula non mattis augue. Maecenas ultrices tellus diam, a dignissim tortor imperdiet quis.",
     image: "pvh.png",
   },
   {
