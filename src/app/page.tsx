@@ -5,7 +5,7 @@ import Header from "@/app/components/layout/Header";
 import Profile from "@/app/components/sections/Profile";
 import Technology from "@/app/components/sections/Technology";
 import Work from "@/app/components/sections/Work";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -20,7 +20,7 @@ const Home = () => {
     if (window.innerWidth > 768) setIsOpen(false);
   };
 
-  useMemo(() => {
+  useEffect(() => {
     if (typeof window !== "undefined") {
       checkWindowSize();
       window.addEventListener("resize", checkWindowSize);
@@ -28,7 +28,7 @@ const Home = () => {
     }
   }, []);
 
-  useMemo(() => {
+  useEffect(() => {
     if (typeof document !== "undefined") {
       const dom = document.querySelector("html");
       const className = "!overflow-hidden";
