@@ -6,13 +6,13 @@ import Work from "@/app/components/sections/Work";
 
 const Home = () => {
   return (
-    <>
+    <div>
       <Header />
       <Work />
       <Profile />
       <Technology />
       <Contact />
-    </>
+    </div>
   );
 };
 
