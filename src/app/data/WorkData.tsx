@@ -9,25 +9,25 @@ export const workData: IWorkData = [
   {
     brand: "Foot Locker",
     title: "Senior Engineer, Web Developer",
-    desc: "E-commerce website enhancements and experiments designed to optimize the customer journey, driving higher conversion rates and increased revenue. This includes conducting A/B tests and implementing the most successful outcomes.",
+    desc: "E-commerce website experimentation and enhancements designed to optimize the customer journey, driving higher conversion rates and increased revenue. This includes conducting A/B tests and implementing the most successful outcomes.",
     image: "footlocker.png",
   },
   {
     brand: "Nike",
     title: "Software Developer",
-    desc: "Rewrite internal proprietary tools that empower the Nike Endorsement Team to efficiently manage and track business tasks, including fulfilling and monitoring financial obligations.",
+    desc: "Rewrite of internal proprietary tools that empower the Nike endorsement team to efficiently manage and track business tasks, including fulfilling and monitoring financial obligations.",
     image: "nike.png",
   },
   {
     brand: "Calvin Klein",
     title: "Senior Developer",
-    desc: "Led the development of multiple e-commerce redesigns, seamlessly integrated third-party APIs, spearheaded content creation and maintenance for major campaigns and promotions, implemented pixel tracking solutions, and conducted A/B testing to drive performance improvements.",
+    desc: "Development of multiple e-commerce redesigns, seamlessly integrated third-party APIs, spearheaded content creation and maintenance for major campaigns and promotions, implemented pixel tracking solutions, and conducted A/B testing to drive performance improvements.",
     image: "calvinklein.png",
   },
   {
     brand: "Tommy Hilfiger",
     title: "Senior Developer",
-    desc: "Oversaw the development of multiple e-commerce redesigns, integrated third-party APIs, managed content creation and upkeep for major campaigns and promotions, and implemented pixel integrations for enhanced analytics and tracking.",
+    desc: "Development of multiple e-commerce redesigns, integrated third-party APIs, managed content creation and upkeep for major campaigns and promotions, and implemented pixel integrations for enhanced analytics and tracking.",
     image: "tommyhilfiger.png",
   },
   {
@@ -39,7 +39,7 @@ export const workData: IWorkData = [
   {
     brand: "IZOD",
     title: "Senior Developer",
-    desc: "Led the re-platforming of the e-commerce website, seamlessly integrated third-party APIs, creating and maintaining content for high-profile campaigns and promotional events, and implemented pixel integrations for enhanced tracking and analytics.",
+    desc: "Re-platforming development of the e-commerce website, seamlessly integrated third-party APIs, creating and maintaining content for high-profile campaigns and promotional events, and implemented pixel integrations for enhanced tracking and analytics.",
     image: "izod.png",
   },
   {
