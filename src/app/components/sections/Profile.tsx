@@ -10,22 +10,20 @@ const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
         sectionsRef.current.profile = el;
       }}
     >
-      <Container className="mt-[2rem] md:mt-[4rem]">
+      <Container className="mt-[4rem] md:mt-[7rem]">
         <h2 className="text-[3rem] md:text-[3.75rem] leading-[100%] font-light">
           Profile
         </h2>
-        <p className="text-[1.6rem] md:text-[1.75rem] leading-[150%] pt-6">
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Mus placerat cras
-          tellus parturient tempor sagittis. Semper placerat vitae faucibus
-          accumsan tellus curabitur fusce facilisi. Aliquam quis rhoncus
-          vulputate convallis congue mauris. Orci potenti vulputate lacus
-          scelerisque fermentum luctus. Gravida ornare ex augue aliquam conubia
-          risus eget diam. Quisque sed tellus integer ornare congue fermentum
-          sed tempor. Gravida sem cursus per nec primis. Lorem ipsum odor amet,
-          consectetuer adipiscing elit. Mus placerat cras tellus parturient
-          tempor sagittis. Semper placerat vitae faucibus accumsan tellus
-          curabitur fusce facilisi. Aliquam quis rhoncus vulputate convallis
-          congue mauris. Semper placerat vitae faucibus.
+        <p className="text-[1.75rem] md:text-[2rem] leading-[150%] pt-6">
+          Front-end web and software developer based in New York. I’ve worked
+          with high-profile brands, developing complex and engaging experiences
+          with a passion for both form and function. Since 2006, I’ve developed
+          interfaces and experiences for high-value, high-traffic websites and
+          software for brands such as Nike, Foot Locker, Calvin Klein, Tommy
+          Hilfiger, Speedo, Champs Sports, Wolters Kluwer, and others. My
+          approach focuses on understanding customer and business needs, then
+          developing scalable, clean, and performant code while utilizing the
+          latest technologies.
         </p>
         <div className="md:flex pt-6">
           <h3 className="font-bold w-1/4 pt-3 pb-4">Experience</h3>

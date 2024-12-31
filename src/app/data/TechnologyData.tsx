@@ -42,7 +42,7 @@ export const technologyData: ITechnologyData = [
       "CI/CD",
       "Agile",
       "GitHub",
-      "JIRA",
+      "Jira",
     ],
   },
   {

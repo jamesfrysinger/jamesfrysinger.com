@@ -1,16 +1,41 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
 import "./globals.css";
-
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["200", "400", "900"],
-  variable: "--font-nunito",
-});
 
 export const metadata: Metadata = {
   title: "James Frysinger",
   description: "Front-End Web & Software Development",
+  keywords: [
+    "Web Development",
+    "Software Development",
+    "Front-End",
+    "Portfolio",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "New York Web Developer",
+    "New Jersey Web Developer",
+  ],
+  authors: [{ name: "James Frysinger", url: "https://www.jamesfrysinger.com" }],
+  openGraph: {
+    title: "James Frysinger - Front-End Web & Software Development",
+    description:
+      "Portfolio showcasing expertise in front-end web and software development.",
+    url: "https://www.jamesfrysinger.com",
+    siteName: "James Frysinger Portfolio",
+    images: [
+      {
+        url: "https://www.jamesfrysinger.com/images/og-image.jpg",
+        width: 800,
+        height: 600,
+        alt: "James Frysinger Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
+  colorScheme: "light dark",
+  robots: "index, follow",
 };
 
 const RootLayout = ({
@@ -20,7 +45,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`antialiased md:text-[20px]`}>{children}</body>
+      <body className={`antialiased min-h-[570px]`}>{children}</body>
     </html>
   );
 };

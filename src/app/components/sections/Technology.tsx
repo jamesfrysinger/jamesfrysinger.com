@@ -28,7 +28,7 @@ const Technology: FC<ISectionsProps> = ({ sectionsRef }) => {
               <h3 className="font-bold md:w-1/4 pt-3 pr-6">{item.title}</h3>
               <div className="flex w-full md:w-3/4">
                 {groups.map((group, groupIndex) => (
-                  <div key={groupIndex} className="w-1/3 pt-3">
+                  <div key={groupIndex} className="w-1/3 pt-3 pr-4">
                     {group.map((detail, detailIndex) => (
                       <p className="pb-3" key={detailIndex}>
                         {detail}

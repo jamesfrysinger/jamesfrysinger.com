@@ -19,7 +19,7 @@ const Work: FC<ISectionsProps> = ({ sectionsRef }) => {
         </h2>
       </Container>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6 pl-6 pr-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5 pl-5 pr-5">
         {data.map((item, index) => (
           <WorkCard
             brand={item.brand}

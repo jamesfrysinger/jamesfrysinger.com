@@ -7,7 +7,7 @@ const Container = ({
 }>) => {
   return (
     <div
-      className={`max-w-[1100px] ml-auto mr-auto pl-8 pr-8 box-content ${className}`}
+      className={`max-w-[1160px] ml-auto mr-auto pl-10 pr-10 box-content ${className}`}
     >
       {children}
     </div>

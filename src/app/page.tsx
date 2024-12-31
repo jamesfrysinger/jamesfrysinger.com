@@ -32,7 +32,13 @@ const Home = () => {
     if (typeof document !== "undefined") {
       const dom = document.querySelector("html");
       const className = "!overflow-hidden";
-      isOpen ? dom?.classList.add(className) : dom?.classList.remove(className);
+      if (isOpen) {
+        dom?.classList.add(className);
+        dom?.classList.add("open");
+      } else {
+        dom?.classList.remove(className);
+        dom?.classList.remove("open");
+      }
     }
   }, [isOpen]);
 
