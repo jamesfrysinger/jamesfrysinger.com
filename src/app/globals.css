@@ -4,7 +4,7 @@
 
 :root {
   --background: #d8dfd8;
-  --foreground: #719068;
+  --foreground: #436e36;
   --animation: rgba(63, 104, 6, 0.35);
   --font-nunito: "Nunito", sans-serif;
 }
@@ -12,7 +12,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1d221d;
-    --foreground: #83997e;
+    --foreground: #9fb09b;
     --animation: rgba(113, 147, 69, 0.35);
   }
 }
@@ -75,7 +75,8 @@ button#hamburger-menu::before {
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
-  height: 14em;
+  height: 24em;
+  margin-bottom: -10em;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.12;

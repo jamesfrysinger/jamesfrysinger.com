@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "James Frysinger",
-  description: "Front-End Web & Software Development",
+  title: "James Frysinger Senior Front-End Web & Software Developer",
+  description: "Front-End Web & Software Development in New York City",
   keywords: [
     "Web Development",
     "Software Development",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "JavaScript",
     "React",
     "Next.js",
-    "New York Web Developer",
+    "New York City Web Developer",
     "New Jersey Web Developer",
   ],
   authors: [{ name: "James Frysinger", url: "https://www.jamesfrysinger.com" }],

@@ -24,7 +24,7 @@ export const technologyData: ITechnologyData = [
     title: "Development & Tools",
     details: [
       "UI/UX",
-      "Component",
+      "Component Dev",
       "Functional Programming",
       "API Integration",
       "Unit Testing",

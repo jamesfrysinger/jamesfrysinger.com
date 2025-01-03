@@ -6,11 +6,11 @@ import React, { FC } from "react";
 import { ISectionsProps } from "@/app/types/Types";
 
 const Contact: FC<ISectionsProps> = ({ sectionsRef }) => {
-  const handleLinkedIn = () => {
-    window.open("https://www.linkedin.com/in/jamesfrysinger/", "_blank");
+  const handleLink = (link: string) => {
+    window.open(link, "_blank");
   };
   const handleEmail = () => {
-    const username = "jimmyfrysinger";
+    const username = "jamesfrysinger";
     const domain = "icloud.com";
     const email = `${username}@${domain}`;
     window.location.href = `mailto:${email}`;
@@ -27,16 +27,25 @@ const Contact: FC<ISectionsProps> = ({ sectionsRef }) => {
         </h2>
         <div className="pt-6">
           <Button
-            text="LinkedIn"
-            title="Connect with me on LinkedIn"
-            onclick={handleLinkedIn}
+            text="Email"
+            title="Send me an email"
+            onclick={handleEmail}
             className="font-bold underline mb-2"
           />
           <br />
           <Button
-            text="Email"
-            title="Send me an email"
-            onclick={handleEmail}
+            text="LinkedIn"
+            title="Connect with me on LinkedIn"
+            onclick={() =>
+              handleLink("http://www.linkedin.com/in/jamesfrysinger")
+            }
+            className="font-bold underline mb-2"
+          />
+          <br />
+          <Button
+            text="GitHub"
+            title="Connect with me on LinkedIn"
+            onclick={() => handleLink("http://www.github.com/jamesfrysinger")}
             className="font-bold underline mb-2"
           />
         </div>

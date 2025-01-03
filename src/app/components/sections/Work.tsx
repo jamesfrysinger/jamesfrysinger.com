@@ -11,7 +11,7 @@ const Work: FC<ISectionsProps> = ({ sectionsRef }) => {
         sectionsRef.current.work = el;
       }}
     >
-      <Container className="mt-[3rem] mb-[3rem] md:mt-[4rem] md:mb-[4rem]">
+      <Container className="mt-[4rem] mb-[6rem]">
         <h2 className="text-[3rem] md:text-[3.75rem] leading-[100%] font-light">
           Selected
           <br />

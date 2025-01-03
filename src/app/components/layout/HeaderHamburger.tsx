@@ -9,6 +9,8 @@ const Hamburger: FC<IIsOpen> = ({ isOpen, setIsOpen }) => {
   };
   return (
     <button
+      aria-label="Mobile Navigation Menu"
+      title="Mobile Navigation Menu"
       id="hamburger-menu"
       className="md:hidden z-10"
       onClick={handleHamburger}

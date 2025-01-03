@@ -61,7 +61,7 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
         </nav>
         <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
-      <div className="mt-[3rem] md:mt-[4rem]">
+      <div className="mt-[5rem] md:mt-[6rem]">
         <h1>
           James Frysinger
           <br />

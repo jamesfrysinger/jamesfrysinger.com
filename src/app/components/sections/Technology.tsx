@@ -24,7 +24,7 @@ const Technology: FC<ISectionsProps> = ({ sectionsRef }) => {
           }
 
           return (
-            <div className="w-full md:flex pt-6" key={index}>
+            <article className="w-full md:flex pt-6" key={index}>
               <h3 className="font-bold md:w-1/4 pt-3 pr-6">{item.title}</h3>
               <div className="flex w-full md:w-3/4">
                 {groups.map((group, groupIndex) => (
@@ -37,7 +37,7 @@ const Technology: FC<ISectionsProps> = ({ sectionsRef }) => {
                   </div>
                 ))}
               </div>
-            </div>
+            </article>
           );
         })}
       </Container>
