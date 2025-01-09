@@ -1,6 +1,6 @@
 import { IWorkCard } from "@/app/types/Types";
 
-const WorkCard = ({ brand, title, desc, image }: IWorkCard) => {
+const WorkCard = ({ brand, title, desc, image, index }: IWorkCard) => {
   return (
     <div className="mb-6 md:mb-6">
       <picture>
@@ -18,7 +18,8 @@ const WorkCard = ({ brand, title, desc, image }: IWorkCard) => {
           className="rounded-md"
           width="1710"
           height="758"
-          loading="lazy"
+          {...(index >= 2 && { loading: "lazy" })}
+          decoding="async"
         />
       </picture>
 

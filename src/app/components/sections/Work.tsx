@@ -24,12 +24,13 @@ const Work: FC<ISectionsProps> = ({ sectionsRef }) => {
       </Container>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5 pl-5 pr-5">
-        {data.map((item) => (
+        {data.map((item, index) => (
           <WorkCard
             brand={item.brand}
             title={item.title}
             desc={item.desc}
             image={item.image}
+            index={index}
             key={item.id}
           />
         ))}

@@ -24,4 +24,5 @@ export interface IWorkCard {
   title: string;
   desc: string;
   image: string;
+  index: number;
 }
