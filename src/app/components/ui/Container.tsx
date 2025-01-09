@@ -1,5 +1,5 @@
 const Container = ({
-  className,
+  className = "",
   children,
 }: Readonly<{
   className?: string;

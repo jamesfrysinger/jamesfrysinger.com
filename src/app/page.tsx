@@ -31,12 +31,11 @@ const Home = () => {
   useEffect(() => {
     if (typeof document !== "undefined") {
       const dom = document.querySelector("html");
-      const className = "!overflow-hidden";
       if (isOpen) {
-        dom?.classList.add(className);
+        dom?.classList.add("!overflow-hidden");
         dom?.classList.add("open");
       } else {
-        dom?.classList.remove(className);
+        dom?.classList.remove("!overflow-hidden");
         dom?.classList.remove("open");
       }
     }

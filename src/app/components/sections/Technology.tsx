@@ -6,16 +6,20 @@ import { FC } from "react";
 const Technology: FC<ISectionsProps> = ({ sectionsRef }) => {
   return (
     <section
+      aria-labelledby="technology-heading"
       ref={(el) => {
         sectionsRef.current.technology = el;
       }}
     >
       <Container className="mt-[5rem] md:mt-[8rem]">
-        <h2 className="text-[3rem] md:text-[3.75rem] leading-[100%] font-light">
+        <h2
+          id="technology-heading"
+          className="text-[3rem] md:text-[3.75rem] leading-[100%] font-light"
+        >
           Technology
         </h2>
 
-        {data.map((item, index) => {
+        {data.map((item) => {
           const groupSize = Math.ceil(item.details.length / 3);
 
           const groups = [];
@@ -24,7 +28,7 @@ const Technology: FC<ISectionsProps> = ({ sectionsRef }) => {
           }
 
           return (
-            <article className="w-full md:flex pt-6" key={index}>
+            <article className="w-full md:flex pt-6" key={item.id}>
               <h3 className="font-bold md:w-1/4 pt-3 pr-6">{item.title}</h3>
               <div className="flex w-full md:w-3/4">
                 {groups.map((group, groupIndex) => (

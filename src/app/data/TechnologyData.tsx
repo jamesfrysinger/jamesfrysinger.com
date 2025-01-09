@@ -1,10 +1,12 @@
 type ITechnologyData = {
+  id: number;
   title: string;
   details: string[];
 }[];
 
 export const technologyData: ITechnologyData = [
   {
+    id: 1,
     title: "Languages",
     details: [
       "JavaScript",
@@ -21,6 +23,7 @@ export const technologyData: ITechnologyData = [
     ],
   },
   {
+    id: 2,
     title: "Development & Tools",
     details: [
       "UI/UX",
@@ -46,6 +49,7 @@ export const technologyData: ITechnologyData = [
     ],
   },
   {
+    id: 3,
     title: "Graphic Design Tools",
     details: ["Figma", "Sketch", "Photoshop", "Illustrator"],
   },

@@ -2,7 +2,7 @@ import { IWorkCard } from "@/app/types/Types";
 
 const WorkCard = ({ brand, title, desc, image }: IWorkCard) => {
   return (
-    <div className="mb-2 md:mb-6">
+    <div className="mb-6 md:mb-6">
       <picture>
         <source
           media="(max-width: 768px)"
@@ -22,7 +22,7 @@ const WorkCard = ({ brand, title, desc, image }: IWorkCard) => {
         />
       </picture>
 
-      <div className="p-4 pl-4 pr-4">
+      <div className="p-4">
         <p>
           <span className="font-bold">{brand}</span>
           <br />

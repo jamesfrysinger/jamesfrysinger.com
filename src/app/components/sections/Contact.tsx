@@ -10,19 +10,23 @@ const Contact: FC<ISectionsProps> = ({ sectionsRef }) => {
     window.open(link, "_blank");
   };
   const handleEmail = () => {
-    const username = "jamesfrysinger";
-    const domain = "icloud.com";
+    const username = "james";
+    const domain = "jamesfrysinger.com";
     const email = `${username}@${domain}`;
     window.location.href = `mailto:${email}`;
   };
   return (
     <section
+      aria-labelledby="contact-heading"
       ref={(el) => {
         sectionsRef.current.contact = el;
       }}
     >
       <Container className="mt-[5rem] md:mt-[8rem] ">
-        <h2 className="text-[3rem] md:text-[3.75rem] leading-[100%] font-light">
+        <h2
+          id="contact-heading"
+          className="text-[3rem] md:text-[3.75rem] leading-[100%] font-light"
+        >
           Contact
         </h2>
         <div className="pt-6">

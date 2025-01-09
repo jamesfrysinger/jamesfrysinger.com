@@ -6,6 +6,8 @@ const Logo = () => {
       fill="none"
       id="logo"
       className="h-[100px] md:h-[160px]"
+      aria-label="Company Logo"
+      role="img"
     >
       <g clipPath="url(#clip0_46_2)">
         <path

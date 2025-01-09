@@ -26,7 +26,7 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
         <div className="grow z-10">
           <Logo />
         </div>
-        <nav>
+        <nav aria-label="Main Navigation" className="md:ml-auto md:mr-0">
           <div
             id="nav-menu"
             className={`
@@ -65,7 +65,7 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
         <h1>
           James Frysinger
           <br />
-          Front-End Web & Software Development
+          Web & Software Development
         </h1>
       </div>
     </Container>
