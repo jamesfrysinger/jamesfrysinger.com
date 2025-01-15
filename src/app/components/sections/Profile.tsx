@@ -2,18 +2,15 @@ import Container from "@/app/components/ui/Container";
 import { experienceData as data } from "@/app/data/ExperienceData";
 import { ISectionsProps } from "@/app/types/Types";
 import { FC } from "react";
-import Button from "../ui/Button";
 
 const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
-  const handleDownload = () => {
-    window.open("/downloads/jamesfrysinger-resume.pdf", "_blank");
-  };
   return (
     <section
       aria-labelledby="profile-heading"
       ref={(el) => {
         sectionsRef.current.profile = el;
       }}
+      role="region"
     >
       <Container className="mt-[4rem] md:mt-[7rem]">
         <h2
@@ -35,8 +32,10 @@ const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
           latest tech.
         </p>
         <div className="md:flex pt-6">
-          <h3 className="font-bold w-1/4 pt-3 pb-4">Experience</h3>
-          <div>
+          <h3 className="font-bold w-1/4 pt-3 pb-4" id="experience-heading">
+            Experience
+          </h3>
+          <div aria-labelledby="experience-heading">
             {data.map((item) => {
               return (
                 <p className="pt-3 pb-3" key={item.id}>
@@ -49,12 +48,15 @@ const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
               );
             })}
             <p className="pt-3 pb-3">
-              <Button
-                text="Download Résumé"
-                title="Connect with me on LinkedIn"
-                onclick={handleDownload}
-                className="font-bold underline mb-2"
-              />
+              <a
+                title="Download my résumé"
+                href="/downloads/jamesfrysinger-resume.pdf"
+                target="_blank"
+                className="font-bold underline mb-2 inline-block"
+                aria-label="Download my résumé"
+              >
+                Download Résumé
+              </a>
             </p>
           </div>
         </div>

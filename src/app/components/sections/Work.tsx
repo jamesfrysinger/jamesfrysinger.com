@@ -11,6 +11,7 @@ const Work: FC<ISectionsProps> = ({ sectionsRef }) => {
       ref={(el) => {
         sectionsRef.current.work = el;
       }}
+      role="region"
     >
       <Container className="mt-[4rem] mb-[4rem]">
         <h2
@@ -32,6 +33,7 @@ const Work: FC<ISectionsProps> = ({ sectionsRef }) => {
             image={item.image}
             index={index}
             key={item.id}
+            aria-label={`Work item ${index + 1}: ${item.title}`}
           />
         ))}
       </div>

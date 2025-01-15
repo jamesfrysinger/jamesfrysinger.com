@@ -6,9 +6,6 @@ import React, { FC } from "react";
 import { ISectionsProps } from "@/app/types/Types";
 
 const Contact: FC<ISectionsProps> = ({ sectionsRef }) => {
-  const handleLink = (link: string) => {
-    window.open(link, "_blank");
-  };
   const handleEmail = () => {
     const username = "james";
     const domain = "jamesfrysinger.com";
@@ -21,6 +18,7 @@ const Contact: FC<ISectionsProps> = ({ sectionsRef }) => {
       ref={(el) => {
         sectionsRef.current.contact = el;
       }}
+      role="region"
     >
       <Container className="mt-[5rem] md:mt-[8rem] ">
         <h2
@@ -35,23 +33,28 @@ const Contact: FC<ISectionsProps> = ({ sectionsRef }) => {
             title="Send me an email"
             onclick={handleEmail}
             className="font-bold underline mb-2"
+            aria-label="Send me an email"
           />
           <br />
-          <Button
-            text="LinkedIn"
+          <a
             title="Connect with me on LinkedIn"
-            onclick={() =>
-              handleLink("http://www.linkedin.com/in/jamesfrysinger")
-            }
-            className="font-bold underline mb-2"
-          />
+            href="http://www.linkedin.com/in/jamesfrysinger"
+            target="_blank"
+            className="font-bold underline mb-2 inline-block"
+            aria-label="Connect with me on LinkedIn"
+          >
+            LinkedIn
+          </a>
           <br />
-          <Button
-            text="GitHub"
-            title="Connect with me on LinkedIn"
-            onclick={() => handleLink("http://www.github.com/jamesfrysinger")}
-            className="font-bold underline mb-2"
-          />
+          <a
+            title="View my GitHub"
+            href="http://www.github.com/jamesfrysinger"
+            target="_blank"
+            className="font-bold underline mb-2 inline-block"
+            aria-label="View my GitHub"
+          >
+            GitHub
+          </a>
         </div>
       </Container>
     </section>

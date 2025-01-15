@@ -10,6 +10,7 @@ const Technology: FC<ISectionsProps> = ({ sectionsRef }) => {
       ref={(el) => {
         sectionsRef.current.technology = el;
       }}
+      role="region"
     >
       <Container className="mt-[5rem] md:mt-[8rem]">
         <h2

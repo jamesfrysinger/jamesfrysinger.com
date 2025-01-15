@@ -10,7 +10,7 @@ const Button = ({
 }: IButton) => {
   return (
     <button
-      className={className}
+      className={`${className} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
       onClick={onclick}
       title={title}
       aria-label={text}

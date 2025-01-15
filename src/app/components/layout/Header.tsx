@@ -29,6 +29,8 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
         <nav aria-label="Main Navigation" className="md:ml-auto md:mr-0">
           <div
             id="nav-menu"
+            role="navigation"
+            aria-hidden={!isOpen}
             className={`
               ${
                 isOpen ? "flex" : "hidden"
@@ -36,26 +38,42 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
               md:flex md:relative md:top-auto md:left-auto md:w-auto md:h-auto md:bg-transparent`}
           >
             <div className="flex flex-wrap md:space-x-8 space-y-6 md:space-y-0">
-              <Button
-                text="Work"
+              <a
+                href="#"
+                title="Work"
+                aria-label="Navigate to Work section"
                 className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base font-light md:font-normal"
-                onclick={() => scrollToSection("work")}
-              />
-              <Button
-                text="Profile"
+                onClick={() => scrollToSection("work")}
+              >
+                Work
+              </a>
+              <a
+                href="#"
+                title="Profile"
+                aria-label="Navigate to Profile section"
                 className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base font-light md:font-normal"
-                onclick={() => scrollToSection("profile")}
-              />
-              <Button
-                text="Technology"
+                onClick={() => scrollToSection("profile")}
+              >
+                Profile
+              </a>
+              <a
+                href="#"
+                title="Technology"
+                aria-label="Navigate to Technology section"
                 className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base font-light md:font-normal"
-                onclick={() => scrollToSection("technology")}
-              />
-              <Button
-                text="Contact"
+                onClick={() => scrollToSection("technology")}
+              >
+                Technology
+              </a>
+              <a
+                href="#"
+                title="Contact"
+                aria-label="Navigate to Contact section"
                 className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base font-light md:font-normal"
-                onclick={() => scrollToSection("contact")}
-              />
+                onClick={() => scrollToSection("contact")}
+              >
+                Contact
+              </a>
             </div>
           </div>
         </nav>
