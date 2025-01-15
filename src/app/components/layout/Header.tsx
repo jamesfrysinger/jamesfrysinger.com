@@ -1,6 +1,5 @@
 import Logo from "@/app/components/ui/Logo";
-import Button from "../ui/Button";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { IIsOpen, ISections, ISectionsProps } from "@/app/types/Types";
 import Hamburger from "./HeaderHamburger";
 import Container from "../ui/Container";
@@ -18,6 +17,21 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
     }
   };
 
+  const [isHidden, setIsHidden] = useState(false);
+
+  useEffect(() => {
+    const setAsHidden = () => {
+      if (window.innerWidth > 768) setIsHidden(true);
+      else setIsHidden(isOpen);
+    };
+
+    window.addEventListener("resize", () => {
+      setAsHidden();
+    });
+
+    setAsHidden();
+  }, [isOpen]);
+
   return (
     <Container
       className={`max-w-[1100px] ml-auto mr-auto pl-10 pr-10 pt-12 box-content`}
@@ -30,7 +44,7 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
           <div
             id="nav-menu"
             role="navigation"
-            aria-hidden={!isOpen}
+            aria-hidden={!isHidden}
             className={`
               ${
                 isOpen ? "flex" : "hidden"
