@@ -9,7 +9,11 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
   isOpen,
   setIsOpen,
 }) => {
-  const scrollToSection = (sectionKey: keyof ISections) => {
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    sectionKey: keyof ISections
+  ) => {
+    e.preventDefault();
     const section = sectionsRef.current[sectionKey];
     if (section) {
       setIsOpen(false);
@@ -57,7 +61,9 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
                 title="Work"
                 aria-label="Navigate to Work section"
                 className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base font-light md:font-normal"
-                onClick={() => scrollToSection("work")}
+                onClick={(e) => {
+                  scrollToSection(e, "work");
+                }}
               >
                 Work
               </a>
@@ -66,7 +72,9 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
                 title="Profile"
                 aria-label="Navigate to Profile section"
                 className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base font-light md:font-normal"
-                onClick={() => scrollToSection("profile")}
+                onClick={(e) => {
+                  scrollToSection(e, "profile");
+                }}
               >
                 Profile
               </a>
@@ -75,7 +83,9 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
                 title="Technology"
                 aria-label="Navigate to Technology section"
                 className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base font-light md:font-normal"
-                onClick={() => scrollToSection("technology")}
+                onClick={(e) => {
+                  scrollToSection(e, "technology");
+                }}
               >
                 Technology
               </a>
@@ -84,7 +94,9 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
                 title="Contact"
                 aria-label="Navigate to Contact section"
                 className="hover:underline w-full md:w-auto text-left text-[3rem] md:text-base font-light md:font-normal"
-                onClick={() => scrollToSection("contact")}
+                onClick={(e) => {
+                  scrollToSection(e, "contact");
+                }}
               >
                 Contact
               </a>
