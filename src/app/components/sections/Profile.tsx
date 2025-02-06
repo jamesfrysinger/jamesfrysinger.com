@@ -53,7 +53,7 @@ const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
                 title="Download my résumé"
                 href="/downloads/jamesfrysinger-resume.pdf"
                 target="_blank"
-                className="font-bold underline mb-2 inline-block"
+                className="underline mb-2 inline-block"
                 aria-label="Download my résumé"
               >
                 Download Résumé
