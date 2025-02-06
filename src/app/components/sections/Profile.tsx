@@ -25,7 +25,7 @@ const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
           over 15 years of development experience and leadership qualities. I’ve
           worked with high-profile brands, developing complex and engaging
           experiences with a passion for both form and function. Since 2006,
-          I’ve developed interfaces for high-value, high-traffic websites and
+          I’ve developed interfaces for large-scale, high-traffic websites and
           software for brands such as Nike, Foot Locker, Calvin Klein, Tommy
           Hilfiger, Speedo, Champs Sports, Wolters Kluwer, and others. My
           approach focuses on understanding customer and business needs, then
