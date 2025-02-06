@@ -6,6 +6,7 @@ import { FC } from "react";
 const Technology: FC<ISectionsProps> = ({ sectionsRef }) => {
   return (
     <section
+      id="technology"
       aria-labelledby="technology-heading"
       ref={(el) => {
         sectionsRef.current.technology = el;

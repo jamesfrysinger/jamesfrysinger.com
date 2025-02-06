@@ -6,6 +6,7 @@ import { FC } from "react";
 const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
   return (
     <section
+      id="profile"
       aria-labelledby="profile-heading"
       ref={(el) => {
         sectionsRef.current.profile = el;

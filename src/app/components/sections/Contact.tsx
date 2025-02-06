@@ -14,6 +14,7 @@ const Contact: FC<ISectionsProps> = ({ sectionsRef }) => {
   };
   return (
     <section
+      id="contact"
       aria-labelledby="contact-heading"
       ref={(el) => {
         sectionsRef.current.contact = el;

@@ -7,6 +7,7 @@ import { ISectionsProps } from "@/app/types/Types";
 const Work: FC<ISectionsProps> = ({ sectionsRef }) => {
   return (
     <section
+      id="work"
       aria-labelledby="selected-works-heading"
       ref={(el) => {
         sectionsRef.current.work = el;
