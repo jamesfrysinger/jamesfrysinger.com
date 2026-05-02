@@ -14,14 +14,14 @@ const Work: FC<ISectionsProps> = ({ sectionsRef }) => {
       }}
       role="region"
     >
-      <Container className="mt-[4rem] mb-[4rem]">
+      <Container className="mt-[2rem] mb-[2rem] md:mt-[4rem] md:mb-[4rem]">
         <h2
           id="selected-works-heading"
           className="text-[3rem] md:text-[3.75rem] leading-[100%] font-light"
         >
-          Selected
+          Work
           <br />
-          Works
+          Experience
         </h2>
       </Container>
 

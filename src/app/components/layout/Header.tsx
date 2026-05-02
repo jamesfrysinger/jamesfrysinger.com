@@ -11,7 +11,7 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
 }) => {
   const scrollToSection = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    sectionKey: keyof ISections
+    sectionKey: keyof ISections,
   ) => {
     e.preventDefault();
     const section = sectionsRef.current[sectionKey];
@@ -105,7 +105,7 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
         </nav>
         <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
-      <div className="mt-[5rem] md:mt-[6rem]">
+      <div className="mt-[2rem] md:mt-[6rem]">
         <h1>
           James Frysinger
           <br />

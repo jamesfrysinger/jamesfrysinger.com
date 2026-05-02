@@ -21,16 +21,15 @@ const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
           Profile
         </h2>
         <p className="text-[1.5rem] md:text-[2rem] leading-[150%] pt-6 font-light">
-          Senior Front-End Web and Software Developer based in New York with
-          over 15 years of development experience and leadership qualities. I’ve
-          worked with high-profile brands, developing complex and engaging
-          experiences with a passion for both form and function. Since 2006,
-          I’ve developed interfaces for large-scale, high-traffic websites and
-          software for brands such as Nike, Foot Locker, Calvin Klein, Tommy
-          Hilfiger, Speedo, Champs Sports, Wolters Kluwer, and others. My
-          approach focuses on understanding customer and business needs, then
-          developing scalable, clean, and performant code while utilizing the
-          latest tech.
+          Senior Software and Web Developer with over 15 years of experience in
+          front-end technologies including React, TypeScript, and JavaScript.
+          Proven track record of building e-commerce front ends and software
+          UI’s, enhancing e-commerce performance through A/B testing and
+          targeted feature development, contributing to substantial conversion
+          rate improvements. Strong expertise in UI/UX principles and Agile
+          methodologies, consistently delivering high-quality, accessible web
+          solutions. Ready to leverage unique skills to drive impactful results
+          and optimize user experiences for forward-thinking organizations.
         </p>
         <div className="md:flex pt-6">
           <h3 className="font-bold w-1/4 pt-3 pb-4" id="experience-heading">
@@ -49,14 +48,15 @@ const Profile: FC<ISectionsProps> = ({ sectionsRef }) => {
               );
             })}
             <p className="pt-3 pb-3">
+              <span style={{ fontSize: ".9rem", marginRight: "4px" }}>⬇</span>
               <a
                 title="Download my résumé"
-                href="/downloads/jamesfrysinger-resume.pdf"
+                href="/downloads/james-frysinger-resume-2026.pdf"
                 target="_blank"
                 className="underline mb-2 inline-block"
                 aria-label="Download my résumé"
               >
-                Download Résumé
+                Download Full Resume (pdf)
               </a>
             </p>
           </div>

@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "New Jersey Web Developer",
   ],
   authors: [{ name: "James Frysinger", url: "https://www.jamesfrysinger.com" }],
+  appleWebApp: {
+    title: "James Frysinger",
+  },
   openGraph: {
     title: "James Frysinger - Front-End Web & Software Development",
     description:

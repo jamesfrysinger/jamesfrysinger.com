@@ -1,8 +1,8 @@
 import { IWorkCard } from "@/app/types/Types";
 
-const WorkCard = ({ brand, title, desc, image, index }: IWorkCard) => {
+const WorkCard = ({ brand, title, image, index }: IWorkCard) => {
   return (
-    <div className="mb-6 md:mb-6">
+    <div className="mb-4 md:mb-6">
       <picture>
         <source
           media="(max-width: 768px)"
@@ -28,8 +28,8 @@ const WorkCard = ({ brand, title, desc, image, index }: IWorkCard) => {
           <span className="font-bold">{brand}</span>
           <br />
           {title}
-          <br />
-          <span style={{ display: "none" }}>{desc}</span>
+          {/*<br />
+          <span style={{ display: "none" }}>{desc}*/}</span>
         </p>
       </div>
     </div>
