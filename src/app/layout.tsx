@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-favicon.png",
+  },
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   colorScheme: "light dark",
   robots: "index, follow",

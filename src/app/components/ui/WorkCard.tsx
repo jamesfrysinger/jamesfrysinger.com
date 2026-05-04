@@ -29,7 +29,7 @@ const WorkCard = ({ brand, title, image, index }: IWorkCard) => {
           <br />
           {title}
           {/*<br />
-          <span style={{ display: "none" }}>{desc}*/}</span>
+          <span style={{ display: "none" }}>{desc}</span>*/}
         </p>
       </div>
     </div>

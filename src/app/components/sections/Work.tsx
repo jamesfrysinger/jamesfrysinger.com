@@ -25,7 +25,7 @@ const Work: FC<ISectionsProps> = ({ sectionsRef }) => {
         </h2>
       </Container>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5 pl-5 pr-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5 pl-5 pr-5 md:pl-10 md:pr-10">
         {data.map((item, index) => (
           <WorkCard
             brand={item.brand}

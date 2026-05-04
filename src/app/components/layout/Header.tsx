@@ -107,7 +107,7 @@ const Header: FC<ISectionsProps & IIsOpen> = ({
       </div>
       <div className="mt-[2rem] md:mt-[6rem]">
         <h1>
-          James Frysinger
+          <span className="font-bold">James Frysinger</span>
           <br />
           Web & Software Development
         </h1>
