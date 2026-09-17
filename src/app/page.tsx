@@ -43,7 +43,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="mb-12">
+      <div className="mb-12 max-w-[1440px] mx-auto">
         <Header
           sectionsRef={sectionsRef}
           isOpen={isOpen}
